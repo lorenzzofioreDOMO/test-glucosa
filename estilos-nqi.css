@@ -1,0 +1,3858 @@
+@font-face {
+    font-family: 'Impulsa';
+    src: url('../fonts/Impulsa-Regular.woff2') format('woff2'),
+        url('../fonts/Impulsa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tommy';
+    src: url('../fonts/MADETommySoft-Light.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tommy';
+    src: url('../fonts/MADETommySoft-Bold.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tommy';
+    src: url('../fonts/MADETommySoft-Medium.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tommy';
+    src: url('../fonts/MADETommySoft-Regular.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+html,
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+/*
+a > * {
+    pointer-events: none !important;
+}
+*/
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a,
+button {
+    -webkit-transition: all ease-out 0.2s;
+    -moz-transition: all ease-out 0.2s;
+    -o-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+}
+
+.flag {
+    max-width: 30px;
+    width: 100%;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* VARIABLES GLOBALES */
+
+:root {
+    --navy: #002E66;
+    --navy2: #0B2C50;
+    --lila: #6D49F2;
+    --lilaDark: #6D49F2;
+    --cyan: #12C6C1;
+    --cyanDark: #3FA3A7;
+    --naranja: #FFAA00;
+    --naranjaDark: #DE9104;
+    --renal:#FD7500;
+    --renal2:#F3901D;
+    --renalDark:#D96501;
+    --renalDark2:#F95E4B;
+    --verde: #28DD39;
+    --verdeDark: #4C9109;
+    --rojo: #FF2742;
+    --rojoDark: #C91A37;
+    --mesFrecCard: #D52B1E;
+    --coral: #F95E4B;
+    --celeste:#20BCB9;
+    --celeste2:#12C6C1;
+    --lightblue:#3FA3A7;
+    --white:#fff;
+    --gray:#4E4E4E;
+    --text-xxs: 0.6rem;
+    --text-xs: 0.8rem;
+    --text-s: 0.9rem;
+    --text-r: 1.1rem;
+    --text-m: 1.2rem;
+    --text-ml: 1.4rem;
+    --text-l: 1.6rem;
+    --text-xl: 2rem;
+    --text-xxl: 2.4rem;
+    --text-xxxl: 3rem;
+    --text-xxxxl: 3.6rem;
+    --font-impulsa: 'Impulsa', sans-serif;
+    --font-tommy: 'Tommy', sans-serif;
+}
+.bg-lightblue{
+    background-color:var(--lightblue);
+}
+.bg-white{
+    background-color: var(--white);
+}
+.bg-celeste{
+    background-color: var(--celeste);
+}
+.bg-celeste2{
+    background-color: var(--celeste2);
+}
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.bg-lila {
+    background-color: var(--lila);
+}
+.bg-liladark{
+    background-color: var(--lilaDark);
+}
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.bg-naranja {
+    background-color: var(--naranja);
+}
+
+.bg-renal{
+    background-color: var(--renal);
+}
+
+.bg-renalDark{
+    background-color: var(--renalDark);
+}
+
+.bg-renalDark2{
+    background-color: var(--renalDark2);
+}
+
+.bg-coral {
+    background-color: var(--coral);
+}
+
+.bg-rojo {
+    background-color: var(--rojo);
+}
+
+.bg-verde {
+    background-color: var(--verde);
+}
+
+.bg-cyanDark {
+    background-color: var(--cyanDark);
+}
+
+.bg-rojoDark {
+    background-color: var(--rojoDark);
+}
+
+.bg-verdeDark {
+    background-color: var(--verdeDark);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.text-lightblue{
+    color: var(--lightblue);
+}
+.text-celeste2{
+    color: var(--celeste2);
+}
+.text-celeste{
+    color: var(--celeste);
+}
+.text-navy {
+    color: var(--navy);
+}
+
+.text-lila {
+    color: var(--lila);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.text-naranja {
+    color: var(--naranja);
+}
+
+.text-renal{
+    color: var(--renal);
+}
+
+.text-renal2{
+    color: var(--renal2);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.text-rojo {
+    color: var(--rojo);
+}
+
+.text-verde {
+    color: var(--verde);
+}
+
+.text-lilaDark {
+    color: var(--lilaDark);
+}
+
+.text-cyanDark {
+    color: var(--cyanDark);
+}
+
+.text-naranjaDark {
+    color: var(--naranjaDark);
+}
+
+.text-cyanDark {
+    color: var(--cyanDark);
+}
+
+.text-rojoDark {
+    color: var(--rojoDark);
+}
+
+.text-verdeDark {
+    color: var(--verdeDark);
+}
+
+.text-coral {
+    color: var(--coral);
+}
+
+.text-gray {
+    color: var(--gray)!important;
+}
+
+
+.text-s {
+    font-size: var(--text-s);
+}
+
+.text-m {
+    font-size: var(--text-m);
+}
+
+.text-ml {
+    font-size: var(--text-ml);
+}
+
+.text-l {
+    font-size: var(--text-l);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-xxl {
+    font-size: var(--text-xxl) !important;
+    line-height: 1.3;
+}
+
+.text-xxxl {
+    font-size: var(--text-xxxl) !important;
+    line-height: 1.3;
+}
+
+.text-xxxxl {
+    font-size: var(--text-xxxxl) !important;
+    line-height: 1.3;
+}
+
+.text-xl-impulsa {
+    font-size: 6rem;
+}
+
+.text-300 {
+    font-weight: 300;
+}
+
+.text-400 {
+    font-weight: 400;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+
+.text-600 {
+    font-weight: 600;
+}
+
+
+.text-800 {
+    font-weight: 800;
+}
+
+
+
+.text-impulsa {
+    font-family: var(--font-impulsa);
+
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 3rem;
+    background-color: #fff;
+    color:#fff;
+    border: none;
+    padding: .5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+
+.btn-renal{
+    background-color: var(--renalDark2)!important;
+    color: white!important;
+}
+.btn-renal:hover{
+    
+    color: var(--renalDark2)!important;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.btn.bg-rojo {
+    background-color: var(--rojo);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn.bg-rojo:hover {
+    background-color: white;
+    color: var(--rojo);
+}
+
+button.btn:hover {
+    background-color: #fff !important;
+    color: var(--navy);
+}
+
+button.btn.bg-verde {
+    background-color: var(--verde);
+    border: solid 2px var(--verde);
+}
+
+button.btn.bg-cyan {
+    background-color: var(--cyan);
+    border: solid 2px var(--cyan);
+}
+
+button.btn.bg-white {
+    border: solid 2px #fff;
+}
+
+button.btn.btn-secondary {
+    background-color: #fff;
+    border: solid 2px var(--navy);
+    color: var(--navy);
+}
+
+button.btn.btn-secondary:hover {
+    background-color: var(--navy) !important;
+    color: #fff;
+}
+
+button.btn img,
+button.btn svg {
+    max-height: 35px;
+    pointer-events: none;
+}
+
+button.btn svg path {
+    transition: all .2s ease;
+}
+
+body {
+    position: relative;
+    font-family: var(--font-tommy);
+}
+
+section {
+    position: relative;
+}
+.home-glucosa{
+    background-color: var(--navy)!important;
+}
+.home-glucosa2{
+    background-color: var(--navy)!important;
+}
+section#home-banner-static {
+    background-color: var(--navy2);
+    color: #fff;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body:not(#page-home) section#home-banner-static {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home section#home-banner-static {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#page-home section#home-banner-static:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    /*z-index: 5;*/
+    background: var(--navy2);
+    background: linear-gradient(0deg, rgba(0, 46, 102, 1) 15%,#20bcb900  100%);
+}
+
+.test-glucosa-landing #home-banner-static:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2rem!important;
+    z-index: 5;
+    background: linear-gradient(0deg, rgba(0, 46, 102, 1) 15%,#20bcb900  100%);
+}
+.test-renal-landing #home-banner-static:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2rem!important;
+    /*z-index: 5;*/
+    background: var(--renal)!important;
+    /*background: linear-gradient(0deg, rgba(0, 46, 102, 1) 15%,#20bcb900  100%);*/
+}
+
+#page-home .home-glucosa:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 5;
+    background: #20BCB9;
+    background: linear-gradient(0deg, rgba(0, 46, 102, 1) 15%,#20bcb900  100%);
+}
+
+section#home-banner-static .overlap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#home-banner-static .overlap img {
+    height: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+#header-main {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    z-index: 20;
+}
+
+#header-main .container,
+#header-main .container-fluid {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#header-main .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.main-menu .dropdown {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    z-index: 40;
+    
+    width: 100%;
+    bottom: -10rem;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    padding: 2rem 1rem 3rem 1rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity .2s ease-out;
+}
+
+.main-menu .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    z-index: 40;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.main-menu .item.item-dropdown {
+    position: relative;
+}
+
+.main-menu .item.item-dropdown:hover {
+    cursor: pointer;
+}
+
+
+
+.main-menu .item.item-dropdown svg {
+    transition: all .2s ease-out;
+}
+
+#home-banner-static .main-menu a.item.item-dropdown.active {
+    color: var(--navy);
+}
+
+.main-menu .item.item-dropdown.active svg path {
+    fill: var(--navy);
+}
+
+#home-banner-static .main-menu .dropdown a.ver-mas {
+    position: absolute;
+    bottom: .25rem;
+    right: 1.5rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.main-menu .item.item-dropdown:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: calc(100% + 1.25rem);
+    height: 3.45rem;
+    pointer-events: none;
+    left: -10%;
+    top: -1rem;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.main-menu .item.item-dropdown.active:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+.main-menu .item.item-dropdown.active svg {
+    transform: rotate(180deg);
+
+}
+
+
+
+.main-menu .dropdown.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 10;
+}
+
+.main-menu .dropdown .item img {
+    width: 40px;
+}
+
+#menu-toggler {
+    display: none;
+
+    z-index: 9999999;
+
+
+}
+
+#menu-toggler .hamburger-inner,
+#menu-toggler .hamburger-inner:after,
+#menu-toggler .hamburger-inner:before {
+    background-color: #fff;
+}
+
+section#home-banner-static .logo {
+    position: relative;
+    z-index: 500;
+}
+
+section#home-banner-static .logo img {
+
+    width: 180px;
+
+}
+
+section#home-banner-static .texto {
+    width: 38%;
+    height: 100%;
+    justify-content: center;
+    gap: 4rem;
+}
+section#home-banner-static #texto-test-glucosa{
+    width: 42%!important;
+}
+
+
+
+#page-home #home-banner-static .gente {
+    position: absolute;
+    width: 56%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    object-position: bottom;
+    margin-top: 2rem;
+}
+
+#page-home #home-banner-static .gentemujer {
+    position: absolute;
+    width: 56%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    object-position: bottom;
+    margin-top: 2rem;
+}
+#persona-testglucosa{
+    position: absolute;
+    width: 56%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    object-position: bottom;
+    margin-top: 2rem;
+}
+
+#page-home #home-banner-static .gente .persona.persona-1 {
+    left: 0;
+    z-index: 10;
+    max-width: 38%;
+}
+
+#page-home #home-banner-static .gente .persona.persona-2 {
+    left: 25%;
+    z-index: 4;
+}
+
+#page-home #home-banner-static .gente .persona.persona-3 {
+    right: 3%;
+    z-index: 5;
+    max-width: 59%;
+}
+
+#page-home #home-banner-static .gente .persona.persona-4 {
+    right: -5%;
+    z-index: 10;
+    max-height: 68%;
+}
+
+
+#home-banner-static .texto .textHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    margin-top: 0;
+}
+
+section#home-banner-static .follow {
+    position: absolute;
+    bottom: 14rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 17px;
+    max-height: 100%;
+}
+
+section#home-banner-static .btn-test-glucosa{
+position: absolute;
+top: 80%;
+bottom: 0;
+left: 40%;
+max-height: 100%;
+}
+section#home-banner-static .btn-test-renal{
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 40%;
+    max-height: 100%;
+    }
+
+section#home-banner-static .btn-test-glucosa a:hover{
+    background-color: #fff;
+    color: var(--lightblue)!important;
+}
+
+section#home-banner-static .btn-test-renal a:hover{
+    background-color: #fff;
+    color: var(--renal)!important;
+}
+
+.test-glucosa-landing .btn_test_glucosa{
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 40%;
+    max-height: 100%;
+}
+
+.test-glucosa-landing .btn_test_glucosa a:hover{
+    background-color: #fff;
+    color: var(--cyan)!important;
+}
+
+.test-renal-landing .btn_test_glucosa{
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 40%;
+    max-height: 100%;
+}
+
+.test-renal-landing .btn_test_glucosa a:hover{
+    background-color: #fff!important;
+    color: var(--renal)!important;
+}
+
+.home-glucosa2 .btn_test_glucosa{
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 40%;
+    max-height: 100%;
+}
+
+.home-glucosa2 .btn_test_glucosa a:hover{
+    background-color: #fff!important;
+    color: var(--renal)!important;
+}
+
+#sintomas .btn_home_glucosa:hover{
+    background-color: #fff;
+    color: var(--cyan)!important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+
+#home-banner-static .texto .textHome .h1-hc {
+    width: 100%;
+    max-width: auto;
+}
+
+#home-banner-static .texto .textHome .h1-5 {
+    width: 25%;
+}
+
+#home-banner-static .texto .textHome .h1-nqi {
+    width: 80%;
+}
+
+#home-banner-static h1 {
+    margin-bottom: 2rem;
+
+}
+
+
+#home-banner-static a {
+    color: #fff;
+    text-decoration: none;
+    /*text-align: center;*/
+}
+/*
+#home-banner-static a:hover {
+    color: var(--coral);
+}*/
+
+#home-banner-static .bottom {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+   
+}
+
+#home-banner-static .texto button.btn {
+    font-size: var(--text-ml);
+    font-weight: 600;
+    
+}
+
+#page-home #home-banner-static .texto button.btn {
+    font-size: var(--text-ml);
+    font-weight: 600;
+    color: var(--navy);
+}
+
+section#home-banner-static .bajar img {
+    transition: all .2s ease;
+
+}
+
+section#home-banner-static .bajar img:hover {
+    transform: scale(1.1);
+}
+
+section#home-slider {
+    z-index: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    background-color: var(--cyan);
+    overflow: hidden;
+}
+
+
+#numeros {
+    background-color: var(--navy);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.swiper{
+    height: 100%!important;
+    overflow:visible!important;
+}
+
+#numeros .swiperBoxes {
+    padding-bottom: 3rem;
+}
+
+#numeros .swiperBoxes .swiper-slide {
+    /*height: auto;*/
+}
+
+.boxes-pagination {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.boxes-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 14px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.boxes-pagination .swiper-pagination-bullet-active {
+    background-color: #fff;
+    color: var(--lightblue);
+}
+
+#numeros .box header img {
+    min-width: 160px;
+    height: 130px;
+}
+
+#numeros .box {
+    height: 100%;
+    flex: 1 1 0;
+    /*background-color: #f4f4f4;*/
+    border-radius: 1.5rem;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    transition: all .2s ease-out;
+}
+
+#numeros .box-numeros-presion{
+    background-color: var(--lilaDark);
+}
+#numeros .box-numeros-cardio{
+    background-color: var(--rojo);
+}
+#numeros .box-numeros-glucosa{
+    background-color: var(--celeste2);
+}
+#numeros .box-numeros-colesterol{
+    background-color: var(--naranja);
+}
+#numeros .box-numeros-imc{
+    background-color: var(--verde);
+}
+#numeros .box-numeros-renal{
+    background-color: var(--renal);
+}
+
+#numeros .box footer {
+    width: 100%;
+}
+
+#page-calculadoras #numeros div:not(.slide-colesterol) a.box footer {
+    display: none;
+}
+
+#page-calculadoras #numeros div.slide-colesterol a.box footer {
+    display: block;
+}
+
+#numeros .swiperBoxes {
+    padding-top: 4rem;
+}
+
+#numeros .box:hover {
+    transform: translateY(-.5rem);
+}
+
+#numeros .box .titulo {
+    font-family: var(--font-impulsa);
+    font-size: var(--text-xxxl);
+    line-height: .8;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#numeros .box a {
+    border: none;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 5px;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#numeros .box button {
+    border: none;
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: 5px;
+    width: 100%;
+    font-weight: 600;
+    /*margin-top: 1rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#numeros .box :is(button, a) img {
+    width: 40px;
+}
+
+#numeros .box .icono {
+    position: absolute;
+    top: -50px;
+    width: 120px;
+    height: 120px;
+    left: calc(50% - 55px);
+}
+
+#numeros .box .icono-new {
+    position: absolute;
+    top: -20px;
+    width: 120px;
+    left: 76%;
+}
+
+
+
+#page-home #numeros {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    z-index: 8;
+}
+
+#page-home #numeros .swiperBoxes {
+    transform: translateY(-6rem);
+}
+
+#page-home #contacto {
+    padding-top: 2rem;
+}
+
+#contacto {
+    background-color: var(--navy);
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+body:not(#page-home) #contacto .escuchamos svg path {
+    fill: var(--white);
+}
+
+#contacto p {
+    color: var(--white);
+}
+
+#page-home #contacto {
+    background: var(--navy);
+
+}
+
+body:not(#page-home) #contacto textarea::placeholder,
+body:not(#page-home) #contacto input::placeholder{
+    color:  var(--white);
+}
+
+body:not(#page-home) #contacto textarea,
+body:not(#page-home) #contacto input{
+    color:  var(--white);
+}
+
+#page-home #contacto p {
+    color: #fff;
+}
+
+#page-home #contacto .alert.alert-danger {
+    color: #842029;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto .img-joven {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 45rem;
+    z-index: 3;
+}
+
+section#contacto .escuchamos {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 18px;
+    height: auto;
+}
+
+.btn-contact-form:hover{
+    color: var(--navy)!important;
+}
+#modalVideo .modal-dialog {
+    width: 800px;
+    max-width: 95%;
+}
+
+video {
+    max-width: 100%;
+}
+
+#footer-main .bola-1 {
+    z-index: 999;
+    position: absolute;
+    top: -5rem;
+    left: -6rem;
+    width: 180px;
+}
+
+#contacto .bola-2 {
+    position: absolute;
+    bottom: 1rem;
+    right: -3rem;
+    width: 350px;
+    z-index: 1;
+}
+
+#contacto .misc-1 {
+    position: absolute;
+    bottom: 2rem;
+    right: -5rem;
+    width: 600px;
+    z-index: 2;
+}
+
+label.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+label.wrapper input,
+label.wrapper textarea {
+    font-size: var(--text-ml);
+    border: none;
+    background: none;
+    border-bottom: solid 2px white;
+    width: 100%;
+    color: #fff;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+#contacto input::placeholder,
+#contacto textarea::placeholder {
+    color: #fff;
+}
+
+
+.robot {
+
+    transform: translatey(0px);
+    -webkit-animation: float 2s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
+}
+
+#footer-main {
+    position: relative;
+    padding-bottom: 8rem;
+    color: var(--navy);
+}
+
+#footer-main .referencias {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    background-color: #EDEDF2;
+    color:var(--navy);
+   
+}
+
+#footer-main .referencias li {
+    word-break: break-word;
+    font-size: var(--text-xs);
+}
+
+#footer-main .menu {
+    display: flex;
+    gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+#footer-main ul.menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--navy);
+
+}
+
+#footer-main p {
+    font-size: var(--text-s);
+}
+
+.page-calculadora #home-banner-static {
+    z-index: 2;
+}
+
+.page-calculadora #calculadora-intro {
+    z-index: 1;
+}
+
+section#calculadora-intro {
+    background-color: #f4f4f4;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#calculadora-intro header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#calculadora-intro .robot {
+    position: absolute;
+    left: 5%;
+    top: 5rem;
+    max-width: 10%;
+}
+
+#calculadora-intro .misc {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    max-width: 8%;
+}
+
+section#calculadora-imc {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#page-calculadora-imc #home-banner-static .persona,
+#page-calculadoras #home-banner-static .robot {
+    position: absolute;
+    bottom: -5rem;
+    height: 90%;
+    left: 72%;
+}
+
+#page-calculadora-imc #home-banner-static .persona.overweight {
+    bottom: -1.5rem;
+    left: 50%;
+}
+
+#page-calculadora-imc .resultado-imprimir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+    background-image: url(../images/fondo-tarjeta-imc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.resultado-imprimir .content {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.resultado-imprimir .ficha .item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.resultado-imprimir .ficha .item hr {
+    border: 1px dotted #000;
+    border-style: none none dotted;
+    color: #fff;
+    background-color: #fff;
+    width: 100%;
+}
+
+#page-calculadoras #home-banner-static .robot {
+    max-width: 300px;
+}
+
+
+#page-calculadoras .botonera {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+#page-calculadoras .botonera .item {
+    border-radius: 2rem;
+    text-align: left;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+#page-calculadoras .botonera .item:hover {
+    background-color: #fff!important;
+}
+
+#page-calculadoras .botonera .item.bg-rojoDark:hover {
+    color: var(--rojoDark);
+}
+
+#page-calculadoras .botonera .item.bg-cyan:hover {
+    color: var(--cyan);
+}
+
+#page-calculadoras .botonera .item.bg-verde:hover {
+    color: var(--verde);
+}
+
+#page-calculadoras .botonera .item.bg-renal:hover {
+    color: var(--renal);
+}
+
+#page-calculadoras .botonera .item img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+section#calculadoras {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+section#calculadoras h2 {
+    margin-bottom: 1.5rem;
+}
+
+#page-calculadoras #calculadoras .box {
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    min-height: 300px;
+}
+
+#page-calculadoras #calculadoras .persona {
+    position: absolute;
+    bottom: -4rem;
+}
+
+#page-calculadoras #calculadoras .calcu-glucosa .box {
+    background: linear-gradient(#12c6c1 0%, #3fa3a7 100%);
+    color: #fff;
+}
+
+#page-calculadoras #calculadoras .calcu-glucosa .persona {
+    left: 0;
+    max-height: 90%;
+}
+
+#page-calculadoras #calculadoras .calcu-glucosa .persona.english {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+    max-height: 80%;
+}
+
+#page-calculadoras #calculadoras .calcu-cardio .box button.btn {
+    background-color: var(--rojoDark);
+    border: solid 2px var(--rojoDark);
+}
+
+#page-calculadoras #calculadoras .calcu-renal .box button.btn {
+    background-color: var(--renal);
+    border: solid 2px var(--renal);
+}
+
+#page-calculadoras #calculadoras .box button.btn img {
+    max-height: 50px;
+}
+
+#page-calculadoras #calculadoras .calcu-cardio .persona {
+    left: 65%;
+    max-height: 100%;
+}
+
+#page-calculadoras #calculadoras .calcu-renal .persona {
+    left: 70%;
+    bottom: 12%;
+    max-height: 85%;
+}
+
+#page-calculadoras #calculadoras .calcu-cardio .persona.english {
+    max-height: 75%;
+    bottom: 4rem;
+}
+
+#page-calculadoras #calculadoras .calcu-renal .persona.english {
+    max-height: 75%;
+    bottom: 4rem;
+}
+
+
+#page-calculadoras #calculadoras .calcu-cardio .box {
+    border: solid 4px var(--rojo);
+    padding: 3rem 2rem;
+}
+
+#page-calculadoras #calculadoras .calcu-renal .box {
+    border: solid 4px var(--renal);
+    padding: 3rem 2rem;
+}
+
+#page-calculadoras #calculadoras .calcu-imc .box {
+    border: solid 4px var(--verde);
+    padding: 3rem 2rem;
+}
+
+#page-calculadoras #calculadoras .calcu-imc .persona {
+    max-height: 105%;
+}
+
+#page-calculadoras #calculadoras .calcu-imc .persona.english {
+    max-height: 75%;
+    bottom: 4rem;
+    left: -5rem;
+}
+
+
+#page-calculadoras #calculadoras .calcu-imc .box button.btn {
+    background-color: var(--verdeDark);
+    border: solid 2px var(--verdeDark);
+}
+
+
+#page-calculadora-imc #calculadora-intro {
+    border-top: solid 25px var(--verde);
+}
+
+#calculadora-imc .box {
+    border-radius: 3rem;
+    border: solid 2px var(--verde);
+    padding: 3rem 2rem;
+    height: 100%;
+}
+
+#calculadora-imc .box .toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#calculadora-imc .box .toggler span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#calculadora-imc .box .toggler span.active {
+
+    color: var(--verde);
+}
+
+
+
+.swiperCalculadora .wrapper-calcu {
+    max-width: 600px;
+    padding-top: 3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.swiperCalculadora .wrapper-calcu p {
+    font-weight: 600;
+    font-size: var(--text-m);
+}
+
+.swiperCalculadora .wrapper-calcu input {
+    padding: 10px 10px;
+    border: solid 1px #b7b7b7;
+    border-radius: 2rem;
+    font-size: var(--text-m);
+}
+
+.swiperCalculadora .wrapper-calcu button {
+    margin-top: 2rem;
+}
+
+#resultados-imc {
+    background-color: var(--verde);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+#resultados-imc .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--verde);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 7rem;
+    gap: 2rem;
+    z-index: 100;
+}
+
+#resultados-imc .revise button.btn {
+    border: solid 2px var(--verde);
+    background-color: #fff;
+    color: var(--verde);
+}
+
+#page-calculadora-imc .btn-primary {
+    background-color: var(--verde);
+    border: solid 2px var(--verde);
+    color: #fff;
+}
+
+#page-calculadora-imc button.btn-primary.btn svg path {
+    fill: #fff;
+}
+
+#page-calculadora-imc button.btn-primary.btn:hover svg path {
+    fill: var(--verde);
+}
+
+#page-calculadora-imc button.btn-primary.btn:hover {
+    background-color: #fff !important;
+    color: var(--verde);
+}
+
+#resultados-imc .revise button.btn:hover {
+    background-color: var(--verde) !important;
+    color: #fff !important;
+}
+
+#resultados-imc .revise button.btn svg path {
+    fill: var(--verde);
+}
+
+#resultados-imc .revise button.btn:hover svg path,
+#page-calculadora-imc button.btn-primary.btn:hover svg path {
+    fill: #fff;
+}
+
+#resultados-glucosa {
+    background-color: var(--cyan);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+#resultados-glucosa .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cyan);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 7rem;
+    gap: 2rem;
+    z-index: 100;
+    transition: all .2s ease-in;
+}
+
+.loading.no-visible {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    z-index: -1 !important;
+}
+
+.loading .robot {
+    height: 250px;
+}
+
+#calculadora-cardiaca .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--rojo);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 7rem;
+    gap: 2rem;
+    z-index: 100;
+    transition: all .2s ease-in;
+}
+
+#resultados-imc .container,
+#resultados-glucosa .container,
+#resultados-cardiaca .container {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+#resultados-glucosa .persona {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    max-height: 450px;
+}
+
+#resultados-imc .container .robot,
+#resultados-cardiaca .container .robot {
+    position: absolute;
+    top: 4rem;
+    left: 60%;
+    width: 250px;
+}
+
+#resultados-imc .misc,
+#resultados-cardiaca .misc {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    max-height: 400px;
+}
+
+#resultados-imc .resultado {
+    background-color: var(--verde);
+    padding: .75rem;
+    border-radius: 2rem;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#page-calculadora-glucosa #home-banner-static .persona,
+#page-calculadora-cardiaca #home-banner-static .persona {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    max-height: 80%;
+    width: auto;
+}
+
+#resultados-glucosa .tips {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 250px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+#resultados-glucosa .tips img {
+    width: 35%;
+}
+
+#resultados-glucosa .tips .tip-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+#resultados-glucosa .tips .tip-2 {
+    position: absolute;
+    left: 35%;
+    top: 0;
+}
+
+#resultados-glucosa .tips .tip-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.revise,
+#resultados-glucosa .descargar,
+#resultados-imc .descargar,
+#resultados-cardiaca .descargar {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+
+#resultados-glucosa .revise button.btn {
+    border: solid 2px var(--cyan);
+
+}
+
+
+#resultados-glucosa .revise button.btn:hover {
+    background-color: var(--cyan) !important;
+    color: #fff !important;
+}
+
+#resultados-glucosa .revise button.btn:hover svg path {
+    fill: #fff;
+}
+
+#resultados-glucosa .descargar button.btn {
+    border: solid 2px var(--cyan);
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+
+#resultados-glucosa .descargar button.btn:hover {
+    color: var(--cyan);
+
+}
+
+#resultados-glucosa .descargar button.btn:hover svg path {
+    fill: var(--cyan);
+}
+
+
+#resultados-imc .revise button.btn {
+    border: solid 2px var(--verde);
+
+}
+
+
+#resultados-imc .revise button.btn:hover {
+    background-color: var(--verde) !important;
+    color: #fff !important;
+}
+
+#resultados-imc .revise button.btn:hover svg path {
+    fill: #fff;
+}
+
+#resultados-imc .descargar button.btn {
+    border: solid 2px var(--verde);
+    background-color: var(--verde);
+    color: #fff;
+}
+
+
+#resultados-imc .descargar button.btn:hover {
+    color: var(--verde);
+
+}
+
+#resultados-imc .descargar button.btn:hover svg path {
+    fill: var(--verde);
+}
+
+
+
+#resultados-cardiaca .revise button.btn {
+    border: solid 2px #fff;
+    background-color: var(--rojo);
+    color: #fff;
+
+}
+
+
+#resultados-cardiaca .revise button.btn:hover {
+    background-color: var(--rojo) !important;
+    color: #fff !important;
+}
+
+#resultados-cardiaca .revise button.btn svg path {
+    fill: #fff;
+}
+
+#resultados-cardiaca .descargar button.btn {
+    border: solid 2px var(--rojo);
+    background-color: var(--rojo);
+    color: #fff;
+}
+
+
+#resultados-cardiaca .descargar button.btn:hover,
+#resultados-cardiaca .revise button.btn:hover {
+    color: var(--rojo) !important;
+    border: solid 2px #fff !important;
+
+    background-color: #fff !important;
+
+}
+
+#resultados-cardiaca .descargar button.btn:hover svg path,
+#resultados-cardiaca .revise button.btn:hover svg path {
+    fill: var(--rojo) !important;
+}
+
+.hulihealth,
+.cliniweb {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hulihealth a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hulihealth button.btn,
+.cliniweb button.btn {
+    border: solid 2px #f4f4f4;
+    background-color: #fff;
+
+}
+
+.compartir .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#resultados-imc .compartir .redes svg path {
+    fill: var(--verde);
+}
+
+#resultados-cardiaca .compartir .redes svg path {
+    fill: var(--rojo);
+}
+
+#resultados-glucosa .compartir .redes svg path {
+    fill: var(--cyan);
+}
+
+.alerta {
+    position: fixed;
+    top: 200px;
+    right: -2px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navy2);
+    z-index: 100;
+    background-image: url(../images/icon-close-navy.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: all .2s ease;
+
+}
+
+.alerta.open {
+    box-shadow: none;
+    background-image: url(../images/icon-bell.png);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.alerta img {
+    width: 20px;
+    height: 20px;
+}
+
+.alerta:hover {
+    background-color: #fff !important;
+}
+
+.alerta-msg.open {
+    right: 0;
+    opacity: 1;
+    pointer-events: all;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.alerta-msg {
+    position: fixed;
+    top: 200px;
+    width: 300px;
+    max-width: 90%;
+    right: -300px;
+    padding: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+#page-calculadora-glucosa .alerta {
+    background-color: var(--cyan);
+}
+
+#page-calculadora-imc .alerta {
+    background-color: var(--verde);
+}
+
+#page-calculadora-cardiaca .alerta {
+    background-color: var(--rojo);
+}
+
+.test-glucosa-landing .alerta{
+    background-color: var(--celeste2);
+}
+.test-renal-landing .alerta{
+    background-color: var(--renal);
+}
+
+#modalAlerta .modal-content {
+    background-color: var(--navy2);
+    color: #fff;
+    border-radius: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: solid 5px var(--naranja);
+}
+
+#modalAlerta .btn-close {
+    filter: invert();
+    opacity: 1;
+}
+
+#modalAlerta .modal-header {
+
+    border-bottom: none;
+}
+
+#modalAlerta .modal-body img {
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+/*CARDIACA CALCULATOR*/
+.swiperRenal .misc-2 {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    top: 2rem;
+    z-index: -1;
+}
+
+.swiperCardiacaPreguntas {
+    margin-bottom: 7rem;
+}
+
+.swiperCardiacaPreguntas .swiper-slide {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.swiperCardiacaPreguntas .pregunta {
+    text-align: center;
+    font-size: var(--text-ml);
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2rem;
+}
+
+.swiperCardiacaPreguntas button.btn {
+    background-color: #fff;
+    border: solid 2px var(--rojo);
+    color: var(--navy);
+    font-size: var(--text-m);
+}
+
+.swiperCardiacaPreguntas button.btn:hover {
+    background-color: var(--rojo) !important;
+    border: solid 2px var(--rojo);
+    color: #fff;
+}
+
+.swiperCardiacaPreguntas .swiper-pagination-progressbar.swiper-pagination {
+    position: relative;
+}
+
+.swiperCardiacaPreguntas .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiperCardiacaPreguntas .swiper-pagination-bullet-active {
+    background-color: var(--rojo);
+}
+
+.gracias {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#resultado button.btn {
+    box-shadow: none;
+}
+
+button.btn.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.swiperCardiacaPreguntas .swiper-slide .opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+/* RENAL CALCULATOR */
+
+.swiperRenal .misc-2 {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    top: 2rem;
+    z-index: -1;
+}
+
+.swiperRenalPreguntas {
+    margin-bottom: 7rem;
+}
+
+.swiperRenalPreguntas .swiper-slide {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.swiperRenalPreguntas .pregunta {
+    text-align: center;
+    font-size: var(--text-ml);
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2rem;
+}
+
+.swiperRenalPreguntas button.btn {
+    background-color: #fff;
+    border: solid 2px var(--renal);
+    color: var(--navy);
+    font-size: var(--text-m);
+}
+
+.swiperRenalPreguntas button.btn:hover {
+    background-color: var(--renal) !important;
+    border: solid 2px var(--renal);
+    color: #fff;
+}
+
+.swiperRenalPreguntas .swiper-pagination-progressbar.swiper-pagination {
+    position: relative;
+}
+
+.swiperRenalPreguntas .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiperRenalPreguntas .swiper-pagination-bullet-active {
+    background-color: var(--renal);
+}
+
+.swiperRenalPreguntas .swiper-slide .opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.swiperRenalPreguntas .swiper-slide .opciones button{
+    width: 200px;
+}
+
+.swiperRenalPreguntas .robot{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.swiperRenalPreguntas .rinon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.gracias {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#resultado button.btn {
+    box-shadow: none;
+}
+
+button.btn.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.swiperCardiacaPreguntas .swiper-slide .opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+
+.swiperGlucosa button.btn {
+    border: solid 2px #fff;
+    box-shadow: none;
+    background-color: #fff;
+    color: var(--cyan);
+}
+
+.swiperPeso button.btn {
+    border: solid 2px #fff;
+    box-shadow: none;
+    background-color: #fff;
+    color: var(--cyan);
+}
+
+.swiperGlucosa .opciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.swiperGlucosa .pregunta {
+    width: 100%;
+    font-size: var(--text-l);
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 3rem;
+}
+
+.swiperGlucosa .form-check {
+    font-size: var(--text-m);
+    margin-bottom: .5rem;
+}
+
+.swiperGlucosa button.btn:hover {
+    border: solid 2px var(--cyan);
+
+    color: var(--navy);
+}
+
+.swiperGlucosa #quiz {
+    min-height: 400px;
+
+}
+
+.swiperGlucosa #quiz #question {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swiperGlucosa #quiz h2 {
+    text-transform: lowercase;
+}
+
+.swiperGlucosa #question ul {
+    list-style: none;
+}
+
+.swiperGlucosa #question ul li {
+    margin-bottom: .5rem;
+    font-size: var(--text-m);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.swiperGlucosa #question input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.swiperGlucosaPreguntas button.btn {
+    background-color: var(--cyan);
+    padding: .5rem;
+    color: #fff;
+}
+
+.swiperGlucosaPreguntas button.btn:hover {
+    background-color: #fff;
+}
+
+.swiperGlucosaPreguntas button.btn:hover svg path {
+    fill: var(--cyan);
+}
+
+.swiperGlucosaPreguntas button.btn:hover {
+    color: var(--navy);
+}
+
+.swiperGlucosaPreguntas button.btn img {
+    width: 45px;
+    height: 45px;
+}
+
+.swiperGlucosaPreguntas .swiper-slide {
+    padding-left: 10px;
+}
+
+.swiperGlucosa tspan {
+
+    fill: var(--cyan);
+}
+
+.swiperGlucosaPreguntas label.wrapper input,
+.swiperGlucosaPreguntas label.wrapper textarea {
+    border: solid 1px #636363;
+    border-radius: 1rem;
+    color: var(--cyanDark);
+    font-weight: 500;
+}
+
+.swiperGlucosaPreguntas button.btn.disabled {
+    opacity: .75;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.swiperGlucosa .progress-circle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.swiperGlucosa .resultado {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+#head-glucosa{
+    background-color: var(--celeste);
+    height: 30px;
+    z-index: 9999;
+}
+#robot{
+    margin-top: -2rem;
+}
+#prevencion-diabetes{
+    background-color: var(--navy);
+    margin-top: 8rem;
+    height: 290px;
+}
+#img-diabetes{
+    margin-top: -8rem;
+}
+#otros-nros{
+    padding-bottom: 8rem;
+}
+#banner-glucosa{
+    background-image: url("../images/fondo_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height:500px;
+}
+.section_diabetes{
+    background-color: var(--celeste)!important;
+}
+#btn-form{
+    color: var(--navy2)!important;
+}
+
+
+
+@keyframes float {
+    0% {
+
+        transform: translatey(0px);
+    }
+
+    50% {
+
+        transform: translatey(-20px);
+    }
+
+    100% {
+
+        transform: translatey(0px);
+    }
+}
+
+
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotateZ(0);
+    }
+
+    1% {
+        -webkit-transform: rotateZ(30deg);
+    }
+
+    3% {
+        -webkit-transform: rotateZ(-28deg);
+    }
+
+    5% {
+        -webkit-transform: rotateZ(34deg);
+    }
+
+    7% {
+        -webkit-transform: rotateZ(-32deg);
+    }
+
+    9% {
+        -webkit-transform: rotateZ(30deg);
+    }
+
+    11% {
+        -webkit-transform: rotateZ(-28deg);
+    }
+
+    13% {
+        -webkit-transform: rotateZ(26deg);
+    }
+
+    15% {
+        -webkit-transform: rotateZ(-24deg);
+    }
+
+    17% {
+        -webkit-transform: rotateZ(22deg);
+    }
+
+    19% {
+        -webkit-transform: rotateZ(-20deg);
+    }
+
+    21% {
+        -webkit-transform: rotateZ(18deg);
+    }
+
+    23% {
+        -webkit-transform: rotateZ(-16deg);
+    }
+
+    25% {
+        -webkit-transform: rotateZ(14deg);
+    }
+
+    27% {
+        -webkit-transform: rotateZ(-12deg);
+    }
+
+    29% {
+        -webkit-transform: rotateZ(10deg);
+    }
+
+    31% {
+        -webkit-transform: rotateZ(-8deg);
+    }
+
+    33% {
+        -webkit-transform: rotateZ(6deg);
+    }
+
+    35% {
+        -webkit-transform: rotateZ(-4deg);
+    }
+
+    37% {
+        -webkit-transform: rotateZ(2deg);
+    }
+
+    39% {
+        -webkit-transform: rotateZ(-1deg);
+    }
+
+    41% {
+        -webkit-transform: rotateZ(1deg);
+    }
+
+    43% {
+        -webkit-transform: rotateZ(0);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(0);
+    }
+}
+
+@-moz-keyframes ring {
+    0% {
+        -moz-transform: rotate(0);
+    }
+
+    1% {
+        -moz-transform: rotate(30deg);
+    }
+
+    3% {
+        -moz-transform: rotate(-28deg);
+    }
+
+    5% {
+        -moz-transform: rotate(34deg);
+    }
+
+    7% {
+        -moz-transform: rotate(-32deg);
+    }
+
+    9% {
+        -moz-transform: rotate(30deg);
+    }
+
+    11% {
+        -moz-transform: rotate(-28deg);
+    }
+
+    13% {
+        -moz-transform: rotate(26deg);
+    }
+
+    15% {
+        -moz-transform: rotate(-24deg);
+    }
+
+    17% {
+        -moz-transform: rotate(22deg);
+    }
+
+    19% {
+        -moz-transform: rotate(-20deg);
+    }
+
+    21% {
+        -moz-transform: rotate(18deg);
+    }
+
+    23% {
+        -moz-transform: rotate(-16deg);
+    }
+
+    25% {
+        -moz-transform: rotate(14deg);
+    }
+
+    27% {
+        -moz-transform: rotate(-12deg);
+    }
+
+    29% {
+        -moz-transform: rotate(10deg);
+    }
+
+    31% {
+        -moz-transform: rotate(-8deg);
+    }
+
+    33% {
+        -moz-transform: rotate(6deg);
+    }
+
+    35% {
+        -moz-transform: rotate(-4deg);
+    }
+
+    37% {
+        -moz-transform: rotate(2deg);
+    }
+
+    39% {
+        -moz-transform: rotate(-1deg);
+    }
+
+    41% {
+        -moz-transform: rotate(1deg);
+    }
+
+    43% {
+        -moz-transform: rotate(0);
+    }
+
+    100% {
+        -moz-transform: rotate(0);
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    1% {
+        transform: rotate(30deg);
+    }
+
+    3% {
+        transform: rotate(-28deg);
+    }
+
+    5% {
+        transform: rotate(34deg);
+    }
+
+    7% {
+        transform: rotate(-32deg);
+    }
+
+    9% {
+        transform: rotate(30deg);
+    }
+
+    11% {
+        transform: rotate(-28deg);
+    }
+
+    13% {
+        transform: rotate(26deg);
+    }
+
+    15% {
+        transform: rotate(-24deg);
+    }
+
+    17% {
+        transform: rotate(22deg);
+    }
+
+    19% {
+        transform: rotate(-20deg);
+    }
+
+    21% {
+        transform: rotate(18deg);
+    }
+
+    23% {
+        transform: rotate(-16deg);
+    }
+
+    25% {
+        transform: rotate(14deg);
+    }
+
+    27% {
+        transform: rotate(-12deg);
+    }
+
+    29% {
+        transform: rotate(10deg);
+    }
+
+    31% {
+        transform: rotate(-8deg);
+    }
+
+    33% {
+        transform: rotate(6deg);
+    }
+
+    35% {
+        transform: rotate(-4deg);
+    }
+
+    37% {
+        transform: rotate(2deg);
+    }
+
+    39% {
+        transform: rotate(-1deg);
+    }
+
+    41% {
+        transform: rotate(1deg);
+    }
+
+    43% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+.mobile {
+    display: none !important;
+}
+
+.desktop {
+    display: block !important;
+}
+
+.disclaimer {
+    z-index: 5;
+}
+
+#enfermedades-fallacardiaca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 40px;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 85%;
+    margin: 5rem auto auto;
+}
+
+.falla {
+    width: 260px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    /*flex: 1 1 0;*/
+}
+
+.falla p {
+    margin-top: 1rem;
+}
+
+#corazon-falla {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    width: 100px;
+}
+
+.all-the-way {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#conocer-riesgo {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#btn-frec-cardiaca{
+    color: var(--white)!important;
+}
+
+#btn-frec-cardiaca:hover{
+    color: var(--navy)!important;
+}
+
+#numeros .swiper-slide .multi-collapse {
+    margin-top: 1rem;
+    
+}
+
+#numeros .swiper-slide button.btn.toggle {
+    background: none!important;
+    background-color: transparent!important;
+    border: none!important;
+    transform: rotate(0);
+}
+  
+#numeros .swiper-slide button.toggle.collapsed {
+    transform: rotate(180deg);
+    background: none!important;
+    background-color:transparent!important;
+    color:#fff!important;
+}
+
+#numeros .box-numeros-colesterol button{
+    background-color: none!important;
+}
+  
+.swipe-indicator {
+    display: none;
+}
+
+#refes{
+    color: var(--gray)!important;
+}
+
+
+
+
+/*ESTILOS @MEDIA*/
+
+/* XL desktop */
+@media (min-width: 1600px) {
+    section#home h1 {
+        font-size: 5.5rem;
+    }
+
+    section#home .texto p {
+        font-size: 2rem;
+    }
+
+    section#home-banner-static .texto {
+        gap: 10rem;
+    }
+}
+
+/* L desktop */
+@media (min-width: 1441px) {
+
+    #home-banner-static .container-fluid,
+    #numeros .container-fluid {
+        max-width: 85%;
+    }
+
+}
+
+/* M desktop */
+@media (min-width: 1031px) and (max-width: 1440px) {
+    section#home-banner-static .follow {
+        left: 1rem;
+    }
+
+    #header-main .container,
+    #header-main .container-fluid,
+    #home-banner-static .container-fluid {
+        max-width: 90%;
+    }
+
+
+}
+
+
+@media (max-width: 1030px) {
+    #menu-toggler {
+        display: inline-block;
+    }
+
+    .swiper{
+        overflow: hidden!important;
+    }
+
+    #header-main .main-menu {
+        display: flex;
+        position: fixed;
+        background-color: #002e66eb;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+        flex-direction: column;
+        z-index: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .2s ease-out;
+    }
+
+    body.nav-open #header-main .main-menu {
+        z-index: 999;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .main-menu .dropdown .item p br {
+        display: none;
+    }
+
+    .item p{
+        text-align: left!important;
+    }
+
+    .main-menu .item {
+        font-weight: 500;
+        font-size: var(--text-ml);
+    }
+
+    .main-menu .dropdown {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 2rem;
+        row-gap: 40px;
+    }
+
+    #home-banner-static .dropdown a {
+        text-align: left;
+    }
+
+    #page-calculadoras .botonera {
+        flex-direction: column;
+    }
+
+}
+
+/* Not mobile */
+@media (min-width: 768px) {
+    .box-calcu {
+        transition: all .2s ease;
+    }
+
+    .box-calcu:not(.active) {
+        filter: saturate(0);
+        opacity: .25;
+        cursor: pointer;
+    }
+
+    .box-calcu:not(.active) input,
+    .box-calcu:not(.active) button {
+        pointer-events: none;
+    }
+}
+
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+
+    section#home .banner .texto {
+        width: 100%;
+    }
+
+    section#home .banner .numeros {
+        position: absolute;
+        width: 70%;
+        transition: all 0.2s ease;
+        height: 100%;
+        right: 10%;
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+
+/* S tablet  Vertical */
+@media (min-width: 769px) and (max-width: 1025px) {
+    section#home-banner-static .logo img {
+        width: 150px;
+    }
+
+
+    section#home .numeros .bola.bola-1 {
+        bottom: 50%;
+    }
+
+    section#home .numeros .bola.bola-2 {
+        bottom: 45%;
+        top: auto;
+    }
+
+    section#home .banner-1 .bola.bola-1,
+    section#home .banner-2 .bola.bola-2,
+    section#home .banner-3 .bola.bola-3,
+    section#home .banner-4 .bola.bola-4,
+    section#home .banner-5 .bola.bola-5 {
+        width: calc(4em + 10vw);
+        height: calc(4em + 10vw);
+        animation: animateHeart 2s infinite;
+    }
+
+    section#home .banner .texto {
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 10rem;
+
+    }
+
+    section#home .banner .numeros {
+
+        width: 100%;
+
+        right: 0;
+    }
+}
+
+/* S tablet  Horizontal */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    section#home .banner .numeros {
+        width: 100%;
+        right: 0;
+    }
+
+    section#home .numeros .bola {
+        width: calc(2em + 10vw);
+        height: calc(2em + 10vw);
+    }
+
+    section#home .banner-1 .bola.bola-1,
+    section#home .banner-2 .bola.bola-2,
+    section#home .banner-3 .bola.bola-3,
+    section#home .banner-4 .bola.bola-4,
+    section#home .banner-5 .bola.bola-5 {
+        width: calc(3em + 10vw);
+        height: calc(3em + 10vw);
+        animation: animateHeart 2s infinite;
+    }
+
+    section#home .numeros .bola.bola-1 {
+        bottom: 30%;
+    }
+
+    section#home .numeros .bola.bola-2 {
+        bottom: 20%;
+    }
+
+    section#home .banner .text img.textHome {
+
+        right: 10%;
+        width: 61%;
+    }
+
+    #home-prevencion .item .icon {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    #home-prevencion .item .texto {
+        width: calc(100% - 80px);
+        z-index: 1;
+        position: relative;
+    }
+
+    #home-prevencion .item:before {
+
+        width: 90px;
+        height: 90px;
+
+    }
+}
+
+.cambia-el-futuro .robot {
+    position: absolute;
+    right: 10px;
+    bottom: 65px;
+    z-index: 9;
+}
+
+#enfermedades-fallacardiaca {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 40px;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 70%;
+    margin: 5rem auto auto;
+    */
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.falla2 {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    color: white;
+    height: 100%;
+    flex: 1;
+}
+
+.falla2 p {
+    margin-top: 1rem;
+}
+
+.falla3{
+    /*flex: 1;*/
+    width: 230px;
+    transition: 0.5s ease;
+}
+
+.falla3:hover{
+    position: relative;
+    transform: translate(0px, -10px);
+}
+
+.falla {
+    width: 260px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    /*flex: 1 1 0;*/
+}
+
+.falla p {
+    margin-top: 1rem;
+}
+
+#corazon-falla {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    width: 100px;
+}
+
+
+/* XS mobile */
+
+@media (max-width: 767px) {
+    :root {
+
+        --text-m: 1.1rem;
+        --text-ml: 1.2rem;
+        --text-l: 1.4rem;
+        --text-xl: 1.6rem;
+        --text-xxl: 1.8rem;
+        --text-xxxl: 2.2rem;
+        --text-xxxl: 2.6rem;
+
+    }
+    
+    #referencias p {
+        word-wrap: break-word;
+    }
+
+    .cambia-el-futuro .robot {
+        position: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul[class],
+    ol[class] {
+    padding: 0;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .row-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    button.btn {
+        padding: .25rem 1.5rem;
+    }
+
+    #page-home section#home-banner-static {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 80px;
+        margin-bottom: -4rem;
+    }
+
+    section#home .container {
+        padding-top: 180px;
+    }
+
+    section#home-banner-static {
+        padding-top: 6rem;
+    }
+
+    section#home-banner-static .follow {
+        display: none;
+    }
+
+    section#home-banner-static .logo img {
+        right: 1rem;
+        left: auto;
+        width: 125px;
+    }
+
+    section#home-banner-static .texto {
+        width: 70%;
+        padding-top: 0;
+        /*padding-bottom: 50px;*/
+        margin-left: 7%;
+        height: auto;
+        gap: 2rem;
+    }
+
+    #home-banner-static h1 {
+        margin-bottom: 1rem;
+    }
+
+    section#home-banner-static .follow {
+        width: 15px;
+        left: 10px;
+        bottom: 2rem;
+    }
+
+    #page-home #home-banner-static .gente {
+        width: 100%;
+        min-height: 15rem;
+        height: auto;
+        position: relative;
+    }
+
+    #page-home #home-banner-static .gentemujer {
+        min-height: 15rem;
+        height: 400px;
+        position: relative;
+    }
+
+
+    section#numeros {
+        padding-bottom: 2rem;
+        padding-top: 2rem!important;
+    }
+
+    #page-home #numeros a.box {
+        height: 100%;
+    }
+    #numeros .swiperBoxes .swiper-slide{
+        height: auto;
+    }
+    #numeros .swiperBoxes{
+        padding-bottom: 6rem;
+    }
+    #numeros #swiper-wrapper-ded6fd91071085dd2{
+        display: flex;
+        align-items: stretch;
+    }
+
+    #page-home #numeros .swiperBoxes,
+    #page-home .boxes-pagination {
+        transform: translateY(-2rem);
+    }
+
+    #numeros .boxes {
+        flex-direction: column;
+    }
+    
+    #numeros .box {
+        height: auto;
+        padding: 2rem .75rem 1rem .75rem;
+        /*margin-bottom: 3rem;*/
+    }
+
+    #numeros .box p {
+        font-size: 1.2rem;
+    }
+
+    #numeros .box button {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .alerta {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    #contacto {
+        padding-bottom: 7rem;
+    }
+
+    #contacto .img-joven {
+        display: none;
+    }
+
+    #footer-main .bola-1 {
+        width: 90px;
+        top: -45px;
+        left: -45px;
+        z-index: 9999;
+    }
+
+    #contacto .bola-2 {
+        width: 100px;
+        right: -50px;
+    }
+
+    #contacto .misc-1 {
+
+        bottom: 0;
+    }
+
+    #calculadoras .robot-1 {
+        position: relative;
+        margin: auto;
+        display: block;
+        text-align: center;
+        left: auto;
+        width: 100%;
+        top: auto;
+        margin-top: 2rem;
+    }
+
+    #resultados-cardiaca .robot {
+        display: none;
+    }
+
+    #robot{
+        margin-top: 1rem;
+    }
+
+    body:not(#page-home) section#home-banner-static {
+        padding-bottom: 0;
+    }
+
+    #page-calculadora-imc #home-banner-static .persona {
+        position: relative;
+        margin: 1.5rem auto -5rem auto;
+        left: auto;
+        bottom: auto;
+        max-height: 300px;
+    }
+
+    #page-calculadora-glucosa #home-banner-static .persona,
+    #page-calculadora-cardiaca #home-banner-static .persona,
+    #page-calculadoras #home-banner-static .robot {
+        position: relative;
+        margin: auto;
+        left: auto;
+        bottom: auto;
+        max-height: 300px;
+    }
+
+    #calculadora-intro .robot {
+        display: none;
+        /*position: relative;
+        left: auto;
+        top: auto;
+        max-width: 110px;
+        margin: auto;*/
+    }
+
+    #calculadora-imc .box {
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    #resultados-imc .container,
+    #resultados-glucosa .container {
+        padding: 3rem 1.5rem;
+    }
+
+    #resultados-imc .misc,
+    #calculadora-intro .misc,
+    #resultados-cardiaca .misc {
+
+        display: none;
+    }
+
+    #resultados-imc .container .robot {
+        position: relative;
+        margin: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 150px;
+    }
+
+    #resultados-glucosa .robot,
+    #resultados-cardiaca .robot {
+        margin: auto;
+        max-height: 200px;
+        margin-top: 2rem;
+    }
+
+    #resultados-glucosa .tips {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #resultados-glucosa .persona {
+        display: none;
+    }
+
+    #resultados-glucosa .tips .tip-2,
+    #resultados-glucosa .tips .tip-1,
+    #resultados-glucosa .tips .tip-3 {
+        width: 45%;
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+
+    #page-calculadoras #calculadoras .persona {
+        display: none;
+    }
+
+    section#contacto .escuchamos {
+        display: none;
+    }
+
+    #footer-main .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #footer-main .menu span {
+        display: none;
+    }
+
+    #home-banner-static img.gente {
+        max-height: 50%;
+    }
+
+    #modalAlerta .modal-content {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .revise,
+    .descargar {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: .75rem !important;
+    }
+
+    #page-calculadora-imc #home-banner-static .persona.overweight {
+        left: 0;
+        bottom: 3.5rem;
+    }
+
+    #logo_glucosa{
+        width: 150px;
+    }
+    #img_banner_glucosa{
+        max-width: 100%;
+    }
+    #banner-glucosa{
+        height: 600px;
+    }
+    #head-glucosa{
+        padding-bottom: 130px;
+    }
+    .bajar{
+        display: none;
+    }
+    
+    #nqi_logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#home-banner-static .btn-test-glucosa {
+        position: absolute;
+        top: 52%;
+        bottom: 0px;
+        left: 25%;
+        max-height: 100%;
+    }
+
+    .test-glucosa-landing .btn_test_glucosa {
+        position: relative;
+        max-height: 100%;
+        top: 0;
+        left: 0;
+        right:0;
+        margin: auto;
+        width: 100%;
+    }
+    #img-hashtag{
+        display: none;
+    }
+    #page-home .home-glucosa:after {
+        bottom: 46px!important;
+    }
+    #otros-nros{
+        padding-bottom: 4rem;
+    }
+    #header-main .main-menu{
+        padding-top: 4rem;
+    }
+    .home-glucosa .textHome .bottom{
+        padding: 1rem!important;
+    }
+    #page-home .textHome .h1-hc{
+        padding-top: 2rem;
+        margin-left: 1rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    #prevencion-diabetes{
+        height: 390px;
+    }
+    #calculadora-glucosa{
+        margin-top: 3.6rem;
+    }
+    #corazon-falla {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: 80px;
+    }
+    .title-cardiacaimg{
+        margin-top: -1rem!important;
+    }
+
+    #home-banner-static .texto .textHome{
+        min-width:300px;
+    }
+
+    #home-banner-static .texto .textHome .bottom{
+        padding: 0!important;
+    }
+
+    .card-descarga{
+        margin-top: 0!important;
+        margin-bottom: 1rem!important;
+    }
+
+    .question-title{
+        padding: 1rem!important;
+        margin-top: -1rem!important;
+    }
+
+    .quiz-question-group{
+        margin-top: 0rem!important;
+    }
+
+    #referencias details{
+        word-break: break-all;
+        word-wrap: break-word;
+        color: var(--gray)!important;
+    }
+    
+    #robot-result{
+        width: 120px!important;
+        margin-left: 35px!important;
+    }
+
+    #cero-riesgo, #con-riesgo{
+        margin-top: 6rem!important;
+    }
+
+    .btn-row{
+        margin: auto!important;
+    }
+
+    .test-renal-landing .btn_test_glucosa{
+        left: 28%;
+    }
+
+    #title-calc-renal{
+        flex-direction: column;
+    }
+
+    .home-glucosa2 .btn_test_glucosa{
+        position: absolute;
+        top: 54%;
+        bottom: 0;
+        left: 27%;
+        max-height: 100%;
+    }
+    
+    
+    
+    .home-glucosa2 .btn_test_glucosa a:hover{
+        background-color: #fff!important;
+        color: var(--renal)!important;
+    }
+
+    .pasos {
+        display: none!important;
+    }
+    #pasos {
+        display: none!important;
+    }
+
+    .swipe-indicator {
+        display: block;
+        margin-top:-4rem;
+        margin-bottom: 3rem;
+    }
+    #conocer-riesgo {
+        position: absolute;
+        bottom: 14rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #cero-riesgo .card-descarga, #con-riesgo .card-descarga{
+        margin-top: 1.5rem!important;
+    }
+    
+    
+   
+}
+
+#not-supported {
+    display: none;
+}
+
+#resultados-imc .resultado-imprimir footer{
+    font-size: 60%;
+}
+
+
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    body {
+        overflow: hidden;
+    }
+
+    #not-supported {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var;
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    #not-supported p.titulo {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    #not-supported .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #not-supported .navegadores {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #not-supported .navegadores a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin: 15px;
+    }
+
+    #not-supported .navegadores img {
+        width: 80px;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+    }
+
+    #not-supported .navegadores a:hover img {
+        transform: scale(1.05);
+    }
+
+    
+}
+
+
+/****************************************************************************************/
+
+#page-home #btn-enviar-form,
+#page-calculadora-cardiaca #btn-enviar-form,
+#frecuencia-cardiaca #btn-enviar-form,
+#frecuencia-cardiaca #conocer-riesgo {
+    background-color: #b92216 !important;
+    color: white !important;
+}
+
+
+#frecuencia-cardiaca #calculadora-btn {
+    background-color: var(--mesFrecCard);
+}
+
+#frecuencia-cardiaca #calculadora-btn:hover {
+    color: white;
+}
+
+
+#page-home #btn-enviar-form:hover,
+#page-calculadora-cardiaca #btn-enviar-form:hover,
+#frecuencia-cardiaca #btn-enviar-form:hover,
+#frecuencia-cardiaca #conocer-riesgo:hover {
+    color: var(--navy) !important;
+    background-color: white !important;
+}
+
+
+/*
+#page-calculadora-cardiaca #home-banner-static,
+#frecuencia-cardiaca #home-banner-static {
+    background-color: var(--mesFrecCard);
+}
+*/
+
+#page-calculadora-cardiaca section#home-banner-static .follow {
+    bottom: 4rem;
+}
+
+/*
+#page-home section#numeros,
+#frecuencia-cardiaca #contacto,
+#frecuencia-cardiaca section#numeros,
+#page-home #contacto,
+#page-calculadora-cardiaca section#numeros,
+#page-calculadora-cardiaca #contacto {
+    background: var(--mesFrecCard);
+}
+*/
+
+#page-home section#numeros,
+#frecuencia-cardiaca section#numeros,
+#page-calculadora-cardiaca section#numeros {
+    padding-bottom: 2rem;
+}
+
+#page-home #contacto,
+#frecuencia-cardiaca #numeros,
+#frecuencia-cardiaca #contacto,
+#page-calculadora-cardiaca #contacto {
+    padding-top: 2rem;
+}
+
+img.positive-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    max-height: 75px;
+}
+
+#frecuencia-cardiaca .riendas-gris {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    color: var(--navy);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#frecuencia-cardiaca .riendas-rojo {
+    background-color: var(--mesFrecCard);
+    border-radius: 20px;
+    color: white;
+    padding: 60px 25px;
+    display: flex;
+}
+
+.riendas-gris .col-md-6 p,
+.riendas-gris .col-md-6 img {
+    display: inline;
+}
+
+.riendas-gris .col-md-6 p {
+    margin-left: 20px;
+}
+
+.riendas-gris .col-md-6 img {
+    max-height: 100px;
+}
+
+#frecuencia-cardiaca video {
+    max-height: 90vh;
+}
+
+#frecuencia-cardiaca main {
+    overflow: hidden;
+}
+
+#frecuencia-cardiaca #home-banner-static .row .col-md-4 {
+    z-index: 9;
+}
+
+#frecuencia-cardiaca #home-banner-static .row .col-md-8 {
+    z-index: 8;
+}
+
+#frecuencia-cardiaca #home-banner-static #conocer-riesgo {
+    z-index: 10;
+}
+
+#frecuencia-cardiaca .z-adelante {
+    z-index: 9;
+}
+
+#frecuencia-cardiaca .z-adelante img {
+    max-height: 50vh;
+}
+
+#frecuencia-cardiaca .persona {
+    position: absolute;
+    height: 110%;
+    bottom: 0;
+    /*left: 45%;*/
+}
+
+@media only screen and (max-width: 768px) {
+    #frecuencia-cardiaca .persona {
+        position: inherit;
+    }
+
+    #frecuencia-cardiaca .col-md-6 {
+        overflow: hidden;
+    }
+
+    #frecuencia-cardiaca #conocer-riesgo {
+        bottom: 50%;
+    }
+
+    #frecuencia-cardiaca .z-adelante img {
+        max-height: 70vh;
+    }
+}
+
+.falla2 img {
+    max-height: 125px;
+}
+
+.logoB {
+    display: none;
+}
+
+#frecuencia-cardiaca .logoB,
+#page-calculadora-cardiaca .logoB,
+#page-home .logoB {
+    display: inherit;
+}
+
+#frecuencia-cardiaca .logoG,
+#page-calculadora-cardiaca .logoG,
+#page-home .logoG {
+    display: none;
+}
