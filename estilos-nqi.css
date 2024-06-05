@@ -1230,7 +1230,7 @@ label.wrapper {
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: .6rem;
 }
 
 label.wrapper input,
@@ -1720,16 +1720,9 @@ section#calculadoras h2 {
 #resultados-cardiaca .container {
     background-color: #fff;
     border-radius: 2rem;
-    padding: 3rem;
     position: relative;
 }
 
-#resultados-glucosa .persona {
-    position: absolute;
-    bottom: -50px;
-    left: -50px;
-    max-height: 450px;
-}
 
 #resultados-imc .container .robot,
 #resultados-cardiaca .container .robot {
@@ -1766,38 +1759,6 @@ section#calculadoras h2 {
     width: auto;
 }
 
-#resultados-glucosa .tips {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    min-height: 250px;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-}
-
-#resultados-glucosa .tips img {
-    width: 35%;
-}
-
-#resultados-glucosa .tips .tip-1 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-
-#resultados-glucosa .tips .tip-2 {
-    position: absolute;
-    left: 35%;
-    top: 0;
-}
-
-#resultados-glucosa .tips .tip-3 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 .revise,
 #resultados-glucosa .descargar,
@@ -2225,33 +2186,39 @@ button.btn.disabled {
 
 
 .swiperGlucosa button.btn {
-    border: solid 2px #fff;
     box-shadow: none;
-    background-color: #fff;
-    color: var(--cyan);
+    background-color: transparent;
+}
+.swiperGlucosa button i {
+    font-size: 2rem;
 }
 
 .swiperPeso button.btn {
-    border: solid 2px #fff;
     box-shadow: none;
-    background-color: #fff;
+    background-color: transparent;
     color: var(--cyan);
 }
 
 .swiperGlucosa .opciones {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 3rem;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 2rem;
+    margin-top: -1rem;
 }
 
 .swiperGlucosa .pregunta {
     width: 100%;
     font-size: var(--text-l);
-    font-weight: 500;
-    color: var(--navy);
-    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+    color: #00BCFF;
+    padding: 2rem;
+    background: #D6F1FA;
+    border-radius: 1rem;
 }
 
 .swiperGlucosa .form-check {
@@ -2260,8 +2227,6 @@ button.btn.disabled {
 }
 
 .swiperGlucosa button.btn:hover {
-    border: solid 2px var(--cyan);
-
     color: var(--navy);
 }
 
@@ -2297,13 +2262,12 @@ button.btn.disabled {
 }
 
 .swiperGlucosaPreguntas button.btn {
-    background-color: var(--cyan);
     padding: .5rem;
-    color: #fff;
+    color: var(--cyanDark);
 }
 
 .swiperGlucosaPreguntas button.btn:hover {
-    background-color: #fff;
+    background-color: var(--coral);
 }
 
 .swiperGlucosaPreguntas button.btn:hover svg path {
@@ -2324,8 +2288,8 @@ button.btn.disabled {
 }
 
 .swiperGlucosa tspan {
-
-    fill: var(--cyan);
+    fill: #F9B247;
+    font-weight: 600;
 }
 
 .swiperGlucosaPreguntas label.wrapper input,
@@ -2344,8 +2308,13 @@ button.btn.disabled {
 
 .swiperGlucosa .progress-circle {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    padding-top: 1rem;
     justify-content: center;
+    width: 100%;
+    background-color: #005877;
+    border-radius: 1rem;
+    margin-top: 3rem;
 }
 
 .swiperGlucosa .resultado {

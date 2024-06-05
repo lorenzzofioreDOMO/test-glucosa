@@ -12,193 +12,81 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
     integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <!--- <link rel="stylesheet" href="assets/css/print.css" media="print"> -->
-
-  <meta name="description"
-    content="¿Ha chequeado los 6 números? #1 Presion Arterial - #2 Frecuencia cardiaca - #3 Glucosa en Sangre - #4 Colesterol - #5 Peso Saludable - #6 Salud Renal">
-  <meta property="og:title" content="Números que importan">
-  <meta property="og:description"
-    content="¿Ha chequeado los 6 números? #1 Presion Arterial - #2 Frecuencia cardiaca - #3 Glucosa en Sangre - #4 Colesterol - #5 Peso Saludable - #6 Salud Renal">
-  <meta property="og:image" content="https://numerosqueimportan.disfrutomisalud.com/meta-image.jpg">
-  <meta property="og:image:alt" content="Image description">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:url" content="https://numerosqueimportan.disfrutomisalud.com/">
   <link rel="canonical" href="https://numerosqueimportan.disfrutomisalud.com/">
-
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="images/site.webmanifest">
-
   <meta name="theme-color" content="#FF00FF">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body id="page-home" class="test-glucosa-landing">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V98PWQ" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <main>
-
-    <!-- Content -->
-
-    <section id="home-banner-static" class="home-glucosa2 bg-navy">
-      <part-header></part-header>
-      <img src="images/test-glucosa-person.png" alt="" class="gente pt-5" data-lg-reveal="fade-to-left" data-lg-reveal-delay="0.25"> 
-
-      <div class="container-fluid h-100 mt-5">
-        <div class="texto d-flex flex-column align-items-start" id="texto-text-glucosa">
-
-          <div class="textHome">           
-            <div class="top">
-              <h4><b style="font-size:2rem;">Chequee sus números</b><br>
-                Calculadora de riesgo</h4>
-              <h2><b style="font-size:3rem;">Diabetes</b></h2>
-              <p><b>La Federación Internacional de Diabetes (FID) estima <br>
-                que hasta 212 millones de personas, o la mitad de todos <br>
-                los adultos que viven actualmente con diabetes, no <br>
-                están diagnosticados.</b></p>
-              <p class="text-s">La mayoría de ellos tienen diabetes Tipo 2. La FID ha creado un recurso de evaluación 
-                en línea de riesgo de diabetes que tiene como objetivo predecir el riesgo individual de desarrollar diabetes Tipo 2 durante los diez años. La evaluación está basada en el Cuestionario FINDRISC desarrollado y diseñado por Adj. Prof. Jaana Lindstrom y Prof. Jaakko Tuomilehto del Instituto Nacional de Salud y Bienestar, Helsinki, Finlandia.<sup>1</sup></p>
-            </div>      
-          </div>
-          
-          <div class="d-flex gap-2 align-items-center lg-reveal lg-reveal--fade-to-top is-in" data-lg-reveal="fade-to-top" data-lg-reveal-delay="0.5" style="margin-top: -2rem;">
-            <a href="#que-es-diabetes" class="bajar"><img src="images/circle-down.svg" style="width: 55px;" alt=""></a>
-          </div>       
-        </div>
-        <div class="btn_test_glucosa">
-          <a href="test-glucosa.html#calculadora-glucosa" class="bg-cyan d-block w-fit mx-auto text-impulsa text-xxxl text-celeste p-3 rounded-pill">CONOZCA SU RIESGO</a>
-          </a>
-        </div>
-      </div>
-      <div class="follow">
-        <img src="images/seguinos.svg" alt="">
-        <a href="#"><img src="images/icon-fb.svg" alt=""></a>
-        <a href="#"><img src="images/icon-yt.svg" alt=""></a>
-      </div>
-    </section>
-
+<body id="page-home" class="test-glucosa-landing" style="background-color:#ccc;">
     <!-- TEST CALCULADORA GLUCOSA -->
-
     <section id="calculadora-glucosa">
-
-
       <!-- Swiper -->
       <div class="swiper swiperGlucosa">
         <div class="swiper-wrapper">
-
           <div class="swiper-slide  pt-5 pb-5">
-
             <div class="container">
-              <div class="row">
+              <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-12" id="calculadora-intro">
                   <header class="mb-5 justify-content-center">
-                    <img src=" images/metro-calculator-cyan.png" alt="">
-                    <p class="text-xl text-cyan text-400">Calcule su riesgo de padecer diabetes <sup>1</sup></p>
+                    <h2 class="text-xl text-cyan text-400">Calcule su riesgo de padecer diabetes</h2>
                   </header>
                 </div>
-
-                <div class="col-md-4 progress-circle">
-                  <div class="pie"
-                    data-pie='{  "cut": 30,
-                    "percent": 0,
-                    "rotation": 144, "round": true, "size": 300,   "colorCircle": "#f4f4f4", "colorSlice": "#12C6C1", "time": 20 }'>
-                  </div>
-                </div>
-                <div class="col-md-8">
-
-
-                  <div class="swiper swiperGlucosaPreguntas">
-
-
+                <div class="col-md-10">
+                  <div class="swiper swiperGlucosaPreguntas" style="background-color: #fff;border-radius:1rem;">
                     <div class="swiper-wrapper">
-
+                      <!-- Pregunta 1 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">1. ¿En qué rango de edad se encuentra? </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad1" value="0">
-                          <label class="form-check-label" for="glucosaEdad1">
-                            Menos de 45 años
-
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad2" value="2">
-                          <label class="form-check-label" for="glucosaEdad2">
-                            45-54 años
-
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad3" value="3">
-                          <label class="form-check-label" for="glucosaEdad3">
-                            55-64 años
-
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad4" value="5">
-                          <label class="form-check-label" for="glucosaEdad4">
-                            Más de 64 años
-
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="51.757" height="51.757" viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button class="btn preguntas-button-next btn-preg1-glucosa disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
+                        <p class="pregunta">¿En qué rango de edad se encuentra?</p>
+                        <div class="row py-4">
+                          <div class="col-md-2">
+                            <img src="icono-p-1.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad1" value="0">
+                              <label class="form-check-label" for="glucosaEdad1">
+                                Menos de 45 años
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad2" value="2">
+                              <label class="form-check-label" for="glucosaEdad2">
+                                45-54 años
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad3" value="3">
+                              <label class="form-check-label" for="glucosaEdad3">
+                                55-64 años
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad4" value="5">
+                              <label class="form-check-label" for="glucosaEdad4">
+                                Más de 64 años
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg1-glucosa disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
                         </div>
                       </div>
+                      <!-- Pregunta 2 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">2. Índice de masa corporal
-                        </p>
-                        <div class="row">
-                          <div class="col-md-6 mb-3">
-                            <p class="text-cyan text-m mb-3 text-500">Calculadora índice de masa corporal</p>
+                        <p class="pregunta">Índice de masa corporal</p>
+                        <div class="row py-3 d-flex align-items-start justify-content-center">
+                          <div class="col-md-2">
+                            <img src="icono-p-2.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md-5 mb-3 opciones-p-2">
+                            <p class="text-grey text-m mb-3 text-600">Calculadora índice de masa corporal</p>
                             <label for="imc-cms" class="wrapper"> Mi altura en cm
                               <input type="number" id="imc-cms" onkeyup="calcularIMC()">
                             </label>
@@ -206,8 +94,8 @@
                               <input type="number" id="imc-kgs" onkeyup="calcularIMC()">
                             </label>
                           </div>
-                          <div class="col-md-6">
-                            <p class="text-cyan mb-3 text-m text-500">Indice de masa corporal</p>
+                          <div class="col-md-5">
+                            <p class="text-grey mb-3 text-m text-600">Indice de masa corporal</p>
                             <div class="form-check">
                               <input class="form-check-input" type="radio" name="suimc" id="imc25" value="0">
                               <label class="form-check-label" for="imc25">
@@ -226,63 +114,29 @@
                                 Mayor de 30 kg/m2
                               </label>
                             </div>
+                            <div class="opciones">
+                              <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                              <button class="btn preguntas-button-next btn-preg2-glucosa  disabled next-imc"><i class="bi bi-arrow-right-circle"></i></button>
+                            </div>
                           </div>
                         </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="51.757" height="51.757" viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
-                          <button class="btn preguntas-button-next btn-preg2-glucosa  disabled next-imc"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
-                        </div>
                       </div>
+                      <!-- Pregunta 3 -->
                       <div class="swiper-slide">
-                        <p class="pregunta mb-1">3. Perímetro de cintura</p>
-
-                        <p class="text-rojo class mb-3">Medido por debajo de las costillas (normalmente a nivel del
-                          ombligo)</p>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <p class="text-cyan mb-3 text-m text-500">Hombre</p>
+                        <p class="pregunta mb-1 text-center">
+                          Perímetro de cintura <br>
+                          <span class="text-grey text-xs mb-3">Medido por debajo de las costillas (normalmente a nivel del ombligo)</span>
+                        </p>
+                        <div class="row py-3 d-flex align-items-start justify-content-center">
+                          <div class="col-md-2">
+                            <img src="icono-p3.png" alt="icono" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md-5">
+                            <p class="text-grey mb-3 text-m text-600">Hombre</p>
                             <div class="form-check">
                               <input class="form-check-input" type="radio" name="cintura" id="cinturaHombre1" value="0">
                               <label class="form-check-label" for="cinturaHombre1">
                                 Menos de 94 cm
-
                               </label>
                             </div>
                             <div class="form-check">
@@ -298,13 +152,12 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <p class="text-cyan mb-3 text-m text-500">Mujer</p>
+                          <div class="col-md-5">
+                            <p class="text-grey mb-3 text-m text-600">Mujer</p>
                             <div class="form-check">
                               <input class="form-check-input" type="radio" name="cintura" id="cinturaMujer1" value="0">
                               <label class="form-check-label" for="cinturaMujer1">
                                 Menos de 80 cm
-
                               </label>
                             </div>
                             <div class="form-check">
@@ -320,378 +173,180 @@
                               </label>
                             </div>
                           </div>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="51.757" height="51.757" viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
-                          <button class="btn preguntas-button-next btn-preg3-glucosa  disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg3-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
                         </div>
                       </div>
-
+                      <!-- Pregunta 4 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">4. ¿Realiza habitualmente al menos 30 minutos de actividad
-                          física, en el trabajo y/o en el tiempo libre?
+                        <p class="pregunta">¿Realiza habitualmente al menos 30 minutos de actividad física, en el trabajo y/o en el tiempo libre?</p>
+                        <div class="row py-3 d-flex align-items-center justify-content-center">
+                          <div class="col-md-2">
+                            <img src="icono-p4.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="actFis" id="actFis1" value="0">
+                              <label class="form-check-label" for="actFis1">
+                                Sí
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="actFis" id="actFis2" value="2">
+                              <label class="form-check-label" for="actFis2">
+                                No
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg4-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Pregunta 5 -->
+                      <div class="swiper-slide">
+                        <p class="pregunta">¿Con qué frecuencia come verduras o frutas?
                         </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="actFis" id="actFis1" value="0">
-                          <label class="form-check-label" for="actFis1">
-                            Sí
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="actFis" id="actFis2" value="2">
-                          <label class="form-check-label" for="actFis2">
-                            No
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="51.757" height="51.757" viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
-                          <button class="btn preguntas-button-next btn-preg4-glucosa  disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
+                        <div class="row d-flex align-items-center justify-content-center py-3">
+                          <div class="col-md-2">
+                            <img src="icono-p5.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas1"
+                                value="0">
+                              <label class="form-check-label" for="verdurasFrutas1">
+                                Todos los días
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas2"
+                                value="1">
+                              <label class="form-check-label" for="verdurasFrutas2">
+                                No todos los días
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg5-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
                         </div>
                       </div>
-
+                      <!-- Pregunta 6 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">5. ¿Con qué frecuencia come verduras o frutas?
+                        <p class="pregunta">¿Toma medicación para la presión regularmente?
                         </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas1"
-                            value="0">
-                          <label class="form-check-label" for="verdurasFrutas1">
-                            Todos los días
-
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas2"
-                            value="1">
-                          <label class="form-check-label" for="verdurasFrutas2">
-                            No todos los días
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button class="btn preguntas-button-next btn-preg5-glucosa  disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
+                        <div class="row d-flex align-items-center justify-content-center py-3">
+                          <div class="col-md-2">
+                            <img src="icono-p6.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion1" value="0">
+                              <label class="form-check-label" for="medicPresion1">
+                                Sí
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion2" value="2">
+                              <label class="form-check-label" for="medicPresion2">
+                                No
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg6-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
                         </div>
                       </div>
+                      <!-- Pregunta 7 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">6. ¿Toma medicación para la presión regularmente?
+                        <p class="pregunta mb-2">
+                          ¿Le han encontrado alguna vez valores de glucosa (azúcar)altos? <br>
+                          <span class="text-grey text-xs">(ejemplo: en un control médico, durante una enfermedad, durante el embarazo)</span>
                         </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion1" value="0">
-                          <label class="form-check-label" for="medicPresion1">
-                            Sí
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion2" value="2">
-                          <label class="form-check-label" for="medicPresion2">
-                            No
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button class="btn preguntas-button-next btn-preg6-glucosa  disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
+                        <div class="row d-flex align-items-center justify-content-center py-3">
+                          <div class="col-md-2">
+                            <img src="icono-p7.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta1" value="0">
+                              <label class="form-check-label" for="glucosaAlta1">
+                                Sí
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta2" value="5">
+                              <label class="form-check-label" for="glucosaAlta2">
+                                No
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn preguntas-button-next btn-preg7-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                          </div>
                         </div>
                       </div>
+                      <!-- Pregunta 8 -->
                       <div class="swiper-slide">
-                        <p class="pregunta mb-2">7. ¿Le han encontrado alguna vez valores de glucosa (azúcar)
-                          altos?
-                        </p>
-                        <p class="text-rojo mb-3">(ejemplo: en un control médico, durante una enfermedad, durante el
-                          embarazo)</p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta1" value="0">
-                          <label class="form-check-label" for="glucosaAlta1">
-                            Sí
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta2" value="5">
-                          <label class="form-check-label" for="glucosaAlta2">
-                            No
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button class="btn preguntas-button-next btn-preg7-glucosa  disabled"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
-                        </div>
-                      </div>
-
-                      <div class="swiper-slide">
-                        <p class="pregunta">8. ¿Alguno de sus familiares, allegados u otros parientes ha sido
+                        <p class="pregunta">¿Alguno de sus familiares, allegados u otros parientes ha sido
                           diagnosticado con diabetes?
                         </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab1" value="0">
-                          <label class="form-check-label" for="fliaDiab1">
-                            No
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab2" value="3">
-                          <label class="form-check-label" for="fliaDiab2">
-                            Sí: abuelos, tía, tío, primos hermanos
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab3" value="4">
-                          <label class="form-check-label" for="fliaDiab3">
-                            Sí: padres, hermanos o hijos
-                          </label>
-                        </div>
-                        <div class="opciones">
-                          <button class="btn preguntas-button-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(1614.257 2720) rotate(180)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button
-                            class="btn glucosa-button-next btn-preg8-glucosa  disabled"><strong>Finalizar</strong><svg
-                              xmlns="http://www.w3.org/2000/svg" width="51.757" height="51.757"
-                              viewBox="0 0 51.757 51.757">
-                              <g id="Grupo_789" data-name="Grupo 789" transform="translate(-1562.5 -2668.243)">
-                                <g id="Grupo_782" data-name="Grupo 782" transform="translate(-60)">
-                                  <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                                    transform="translate(1621 2721.5) rotate(-90)">
-                                    <path id="Trazado_987" data-name="Trazado 987"
-                                      d="M27.378,1.5A25.885,25.885,0,0,1,37.452,51.223,25.885,25.885,0,0,1,17.3,3.534,25.718,25.718,0,0,1,27.378,1.5Zm0,48.757A22.878,22.878,0,1,0,4.5,27.378,22.9,22.9,0,0,0,27.378,50.257Z"
-                                      transform="translate(0)" fill="#fff" />
-                                    <path id="Trazado_988" data-name="Trazado 988"
-                                      d="M21.751,29.251a1.5,1.5,0,0,1-1.061-.439l-9.751-9.751a1.5,1.5,0,0,1,2.121-2.121l8.691,8.691,8.691-8.691a1.5,1.5,0,0,1,2.121,2.121l-9.751,9.751A1.5,1.5,0,0,1,21.751,29.251Z"
-                                      transform="translate(5.627 9.378)" fill="#fff" />
-                                    <path id="Trazado_989" data-name="Trazado 989"
-                                      d="M18,33a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,1,1,3,0V31.5A1.5,1.5,0,0,1,18,33Z"
-                                      transform="translate(9.378 5.627)" fill="#fff" />
-                                  </g>
-                                </g>
-                              </g>
-                            </svg></button>
+                        <div class="row d-flex align-items-center justify-content-center py-3">
+                          <div class="col-md-2">
+                            <img src="icono-p8.png" alt="" width="100" class="icono-pregunta">
+                          </div>
+                          <div class="col-md">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab1" value="0">
+                              <label class="form-check-label" for="fliaDiab1">
+                                No
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab2" value="3">
+                              <label class="form-check-label" for="fliaDiab2">
+                                Sí: abuelos, tía, tío, primos hermanos
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab3" value="4">
+                              <label class="form-check-label" for="fliaDiab3">
+                                Sí: padres, hermanos o hijos
+                              </label>
+                            </div>
+                          </div>
+                          <div class="opciones">
+                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
+                            <button class="btn glucosa-button-next btn-preg8-glucosa  disabled"><strong>Finalizar</strong></button>
+                          </div>
                         </div>
                       </div>
-
                     </div>
-
                     <div class="swiper-pagination preguntas-pagination"></div>
+                    <div class="progress-container">
+                      <div class="container-bar">
+                        <div class="progress-bar" id="progress-bar"></div>
+                      </div>
+                      <div class="progress-text" id="progress-text">0% <span class="text-white" style="font-size: 18px;">COMPLETADO</span></div>
+                    </div>                    
                   </div>
                 </div>
               </div>
-
-
-
-
             </div>
           </div>
 
-          <div class="swiper-slide bg-cyan">
+          <div class="swiper-slide bg-navy">
             <div id="resultados-glucosa">
               <div class="loading">
-                <img src="images/robot-up.svg" alt="" class="robot">
+                <img src="images/logo_glucosa.png" alt="Logo Mas que Glucosa" class="robot">
                 <p class="text-m text-center text-white">Cargando su resultado...</p>
                 <div class="d-flex justify-content-center">
                   <div class="spinner-border" role="status">
@@ -701,136 +356,252 @@
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
-                    <p class="text-l text-500">Su resultado - Riesgo de padecer diabetes:</p>
+                  <div class="col-md-9" id="box-resultados">
+                    <p class="text-l text-500">SU RESULTADO - RIESGO DE PADECER DIABETES:</p>
                     <p id="su-resultado" class="text-cyan text-xl mb-3 text-600 text-uppercase"></p>
                     <div class="revise">
                       <p class="text-m text-500">Revise este resultado con su médico</p>
-                      <a href="#" id="download-results" class="a-download-result-glucosa"><button class="btn"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="21.663" height="25.996"
-                            viewBox="0 0 21.663 25.996">
-                            <g id="Grupo_3188" data-name="Grupo 3188" transform="translate(-968.262 -1232.096)">
-                              <path id="Icon_ionic-md-download" data-name="Icon ionic-md-download"
-                                d="M28.413,13.673H22.226V4.5H12.938v9.173H6.75l10.832,10.7ZM6.75,27.436V30.5H28.413v-3.06Z"
-                                transform="translate(961.512 1227.596)" fill="#12c6c1" />
-                            </g>
-                          </svg>
-                          Descargarlo</button></a>
-                    </div>
-                    <div class="hulihealth flex-column align-items-center text-center mt-5 mb-5">
-                      <p class="text-ml mb-1 text-600 text-navy">Le sugerimos agendar una cita con un médico</p>
-                      <a href="https://www.hulihealth.com/es" class="a-hulihealth-glucosa">
-                        <button class="btn"><img src="images/logo-hulihealth.png" alt="" style="width: 200px;"></button>
-                      </a>
-                      <p class="text">Haga click aquí y agende su cita</p>
-                    </div>
-                    <div class="cliniweb flex-column align-items-center text-center mt-5 mb-5">
-                      <p class="text-ml mb-1 text-600 text-navy">Le sugerimos agendar una cita con un médico</p>
-                      <a href="https://www.cliniweb.com/" class="a-cliniweb-glucosa">
-                        <button class="btn"><img src="images/logo-cliniweb.png" alt="" style="width: auto;"></button>
-                      </a>
-                      <p class="text">Haga click aquí y agende su cita</p>
-                    </div>
-                    <div class="descargar">
-                      <button class="btn" onclick="location.reload();"><svg xmlns="http://www.w3.org/2000/svg"
-                          width="51.898" height="51.898" viewBox="0 0 51.898 51.898">
-                          <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
-                            transform="translate(53.398 -1.5) rotate(90)">
-                            <path id="Trazado_987" data-name="Trazado 987"
-                              d="M27.449,1.5a25.956,25.956,0,0,1,10.1,49.859A25.956,25.956,0,0,1,17.348,3.54,25.788,25.788,0,0,1,27.449,1.5Zm0,48.9A22.949,22.949,0,1,0,4.5,27.449,22.975,22.975,0,0,0,27.449,50.4Z"
-                              transform="translate(0)" fill="#fff" />
-                            <path id="Trazado_988" data-name="Trazado 988"
-                              d="M21.78,29.28a1.5,1.5,0,0,1-1.061-.439l-9.78-9.78a1.5,1.5,0,1,1,2.121-2.121l8.719,8.719L30.5,16.939a1.5,1.5,0,0,1,2.121,2.121l-9.78,9.78A1.5,1.5,0,0,1,21.78,29.28Z"
-                              transform="translate(5.67 9.449)" fill="#fff" />
-                            <path id="Trazado_989" data-name="Trazado 989"
-                              d="M18,33.059a1.5,1.5,0,0,1-1.5-1.5V12a1.5,1.5,0,0,1,3,0V31.559A1.5,1.5,0,0,1,18,33.059Z"
-                              transform="translate(9.449 5.67)" fill="#fff" />
-                          </g>
-                        </svg>
-                        Comenzar nuevamente</button>
-                      <div class="compartir">
-                        <div class="d-flex mb-2 align-items-center justify-content-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; margin-right: 10px" class="mr-2"
-                            viewBox="0 0 31.5 36">
-                            <path id="Icon_awesome-share-alt" data-name="Icon awesome-share-alt"
-                              d="M24.75,22.5a6.721,6.721,0,0,0-4.2,1.469l-7.206-4.5a6.789,6.789,0,0,0,0-2.931l7.206-4.5A6.738,6.738,0,1,0,18.16,8.215l-7.206,4.5a6.75,6.75,0,1,0,0,10.562l7.206,4.5A6.751,6.751,0,1,0,24.75,22.5Z"
-                              fill="#002E66" />
-                          </svg>
+                      <div class="compartir d-flex align-items-center justify-content-start gap-4">
+                        <a href="#" id="download-results" class="a-download-result-glucosa">
+                          <button class="btn-descarga-resultado">Descargar</button>
+                        </a>
+                        <div class="d-flex mb-2 align-items-center justify-content-start">
                           <p class="text-500 text-">Compartir la calculadora</p>
                         </div>
                         <div class="redes">
                           <a href="https://www.facebook.com/sharer/sharer.php?u=https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html" id="share-fb" class="a-share-glucosa-fb" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.664"
-                              viewBox="0 0 34.875 34.664">
-                              <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook"
-                                d="M35.438,18A17.438,17.438,0,1,0,15.275,35.227V23.041h-4.43V18h4.43V14.158c0-4.37,2.6-6.784,6.586-6.784a26.836,26.836,0,0,1,3.9.34V12h-2.2a2.52,2.52,0,0,0-2.841,2.723V18h4.836l-.773,5.041H20.725V35.227A17.444,17.444,0,0,0,35.438,18Z"
-                                transform="translate(-0.563 -0.563)" />
-                            </svg>
+                            <i class="bi bi-facebook text-white"></i>
                           </a>
                           <a href="https://wa.me/?text=Realicé%20el%20test%20de%20riesgo%20Diabetes%20Tipo2 https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html" id="share-tw" class="a-share-glucosa-tw" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5">
-                              <path id="Icon_ionic-logo-whatsapp" data-name="Icon ionic-logo-whatsapp"
-                                d="M18.286,2.25A15.4,15.4,0,0,0,2.822,17.594a15.186,15.186,0,0,0,2.219,7.923L2.25,33.75l8.562-2.72A15.49,15.49,0,0,0,33.75,17.594,15.4,15.4,0,0,0,18.286,2.25Zm7.69,21.172a3.994,3.994,0,0,1-2.735,1.763c-.725.038-.746.562-4.7-1.156s-6.332-5.9-6.519-6.164a7.584,7.584,0,0,1-1.459-4.11,4.382,4.382,0,0,1,1.5-3.215,1.514,1.514,0,0,1,1.071-.451c.311-.005.513-.009.743,0s.576-.048.875.748,1.016,2.753,1.107,2.952a.716.716,0,0,1,.007.687,2.686,2.686,0,0,1-.419.639c-.206.221-.434.5-.618.664-.205.187-.42.392-.2.792a11.833,11.833,0,0,0,2.094,2.794,10.789,10.789,0,0,0,3.1,2.061c.388.211.619.188.86-.065s1.029-1.107,1.308-1.488.539-.307.9-.164,2.261,1.164,2.649,1.375.646.318.739.485A3.247,3.247,0,0,1,25.975,23.422Z"
-                                transform="translate(-2.25 -2.25)" />
-                            </svg>
+                            <i class="bi bi-whatsapp text-white"></i>
                           </a>
                           <a href="#" id="share-mail" class="a-share-glucosa-mail">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37.437" height="29.415"
-                              viewBox="0 0 37.437 29.415">
-                              <path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail"
-                                d="M36.121,5.625H5.816A3.576,3.576,0,0,0,2.25,9.19V31.474A3.576,3.576,0,0,0,5.816,35.04H36.121a3.576,3.576,0,0,0,3.566-3.565V9.19A3.576,3.576,0,0,0,36.121,5.625ZM35.676,13.2l-14.707,9.8L6.261,13.2V9.636l14.707,9.8,14.707-9.8Z"
-                                transform="translate(-2.25 -5.625)" />
-                            </svg>
-
+                            <i class="bi bi-instagram text-white"></i>
                           </a>
                         </div>
                       </div>
                     </div>
+                    <div class="descargar">
+                      <button class="btn" onclick="location.reload();"><i class="bi bi-arrow-repeat text-white"></i> Comenzar nuevamente</button>
+                    </div>
                   </div>
                   <div class="col-md-3">
-                    <img src="images/robot-up.svg" alt="" class="robot robot-calcu">
+                    <img src="images/img-resultado-bajo.png" alt="" class="img-resultado">
                   </div>
-                  <div class="col-12 mt-5">
-                    <p class="text-ml text-cyan text-600 mb-3">Se estima que 1 de cada 25 personas desarrollará
-                      diabetes.</p>
-                    <p>Usted no puede hacer nada respecto a su edad y su predisposición genética.<br>
+                  <!--Info Resultado-->
+                  <div class="col-12 mt-5 px-4">
+                    <p class="text-ml text-blue text-600 mb-3">Se estima que 1 de cada 25 personas desarrollará diabetes.</p>
+                    <p>
+                      Usted no puede hacer nada respecto a su edad y su predisposición genética.<br>
                       Pero sí, respecto al resto de factores que influyen en la diabetes Tipo 2 como el sobrepeso, la
                       obesidad abdominal, el estilo de vida sedentario, los hábitos alimenticios y el fumar.<br>
                       <strong>Sí está en sus manos hacer algo:</strong> Los cambios en su estilo de vida pueden prevenir
-                      la diabetes o al
-                      menos retrasar su inicio hasta edades ya muy avanzadas.
+                      la diabetes o al menos retrasar su inicio hasta edades ya muy avanzadas.
                     </p>
                   </div>
-                  <div class="offset-md-3 col-md-9">
+                  <div class="col-md-9 px-4">
                     <div class="tips">
-                      <img src="images/cuidar-dieta.svg" alt="" class="tip-1">
-                      <img src="images/vigilar-peso.svg" alt="" class="tip-2">
-                      <img src="images/activ-fisc.svg" alt="" class="tip-3">
+                      <div class="tip">
+                        <img src="icono-dieta.png" alt="icono" class="tip-1">
+                        <p>
+                          <span class="text-blue"><b>Cuidar su dieta</b></span><br>
+                          Tomando más cereales y fibras y reemplazando grasas animales por grasas vegetales.
+                        </p>
+                      </div>
+                      <div class="tip">
+                        <img src="icono-vigilar.png" alt="icono" class="tip-2">
+                        <p>
+                          <span class="text-blue bold"><b>Vigilar el aumento de peso</b></span><br>
+                          sobre todo en la zona de la cintura.
+                        </p>
+                      </div>
+                      <div class="tip">
+                        <img src="icono-practicar.png" alt="icono" class="tip-3">
+                        <p>
+                          <span class="text-blue"><b>Practicar actividad física</b></span>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="offset-md-4 col-md-8">
-                    <p class="text-center text-m text-600 mb-2">La prevención salva vidas. Consulte con su médico.</p>
+                  <div class="col-md-9 pb-5 px-4">
+                    <p class="text-left text-m text-600 mb-2 text-blue"><strong>La prevención salva vidas. Consulte con su médico.</strong></p>
                     <p class="text-s">Este contenido no hace parte de un consejo médico ni un diagnóstico clínico. Esta
-                      es información
-                      preventiva diseñada para que la comparta con su médico y para que él sepa más sobre su riesgo. NO
-                      DEJE O CAMBIE su medicación para las enfermedades cardio metabólicas sin consultar con un
+                      es información preventiva diseñada para que la comparta con su médico y para que él sepa más sobre su riesgo. 
+                      NO DEJE O CAMBIE su medicación para las enfermedades cardio metabólicas sin consultar con un
                       profesional de la salud. Consulte siempre a su médico antes de tomar cualquier decisión
                       relacionada con su enfermedad.</p>
                   </div>
                 </div>
-
-                <img src="images/shutterstock_1933246808.png" alt="" class="persona">
+                <img src="img-mujer-derecha.png" alt="" class="persona">
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
-
     </section>
 
-    
+    <style>
+      .swiper-wrapper {
+        height: 370px!important;
+      }
+      .swiper-slide {
+        padding-left: 0rem!important;
+      }
+      .icono-pregunta {
+        margin-left: -3rem;
+      }
+      .form-check-input {
+        border: 1px solid #00BCFF!important;
+      }
+      .opciones-p-2 input {
+        border: 1px solid #00BCFF!important;
+      }
+      .text-grey {
+        color: #505050;
+      }
+      .text-blue {
+        color:#005877;
+      }
+      .text-xs {
+        font-size: .9rem;
+      }
+      .progress-container {
+        width: 100%;
+        background-color: #005877;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 20px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .container-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #f6f6f6;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        border-radius: 25px;
+        transition: width 0.5s ease;
+      }
+      .progress-bar {
+        width: 0%;
+        height: 20px;
+        background-color: #f39c12;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        border-radius: 25px 0 0 25px;
+        transition: width 0.5s ease;
+      }
+      .progress-text {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #f39c12;
+      }
+      #box-resultados {
+        background-color: #005877;
+        border-radius: 16px;
+        padding: 2rem;
+        color: #fafafa;
+      }
+      #su-resultado {
+        color: #F9B247;
+        border: 1px solid #fafafa;
+        border-radius: 12px;
+        margin-top: 1rem;
+        padding: .6rem;
+        width: 80%;
+      }
+      .img-resultado {
+        margin-left: -70px;
+      }
+      .btn-descarga-resultado {
+        background-color: #fff;
+        border: none;
+        color: #005877;
+        padding: .5rem 2rem;
+        border-radius: 50rem;
+      }
+      .revise {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      .compartir .redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .compartir .redes a {
+        font-size: 1.4rem;
+      }
+      #resultados-glucosa .descargar button.btn {
+        border: solid 2px #fafafa;
+        background-color: transparent;
+        color: #fff;
+      }
+      #resultados-glucosa .container {
+        background-color: #BBE1EE;
+      }
+      #resultados-glucosa .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #005877;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 7rem;
+        gap: 2rem;
+        z-index: 100;
+        transition: all .2s ease-in;
+      }
+      #resultados-glucosa {
+        background-color: #EAEAEA;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        position: relative;
+      }
+      #resultados-glucosa .tips {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        min-height: 160px;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        gap: 1rem;
+      }
+      .tips .tip {
+        display: flex;
+        align-items: flex-start;
+        gap: .5rem;
+        width: 300px;
+      }
+      .tips .tip .tip-1,
+      .tips .tip .tip-2,
+      .tips .tip .tip-3 {
+        width: 60px;
+        object-fit: cover;
+      }
+      #resultados-glucosa .persona {
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        max-height: 450px;
+      }
+    </style>
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

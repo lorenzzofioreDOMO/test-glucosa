@@ -40,82 +40,32 @@ function calcularIMC() {
 
 }
 
-// Círculo de porcentaje
-const circle = new CircularProgressBar("pie");
-circle.initial();
+// CALCULAR RESULTADO FINAL
+let valoresRespuestas = [];
 
 // Al avanzar de pregunta cambiar los valores del circulo de porcentaje
 swiperGlucosaPreguntas.on('slideChange', function () {
+  const progressPercentages = [0, 14, 28, 42, 56, 70, 84, 98, 100];
+  const currentIndex = swiperGlucosaPreguntas.activeIndex;
+  const progressPercentage = progressPercentages[currentIndex];
 
-  if (swiperGlucosaPreguntas.activeIndex === 0) {
-    const optionsCircle = {
-      index: 1,
-      percent: 0,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 1) {
-    const optionsCircle = {
-      index: 1,
-      percent: 14,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 2) {
-    const optionsCircle = {
-      index: 1,
-      percent: 28,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 3) {
-    const optionsCircle = {
-      index: 1,
-      percent: 42,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 4) {
-    const optionsCircle = {
-      index: 1,
-      percent: 56,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 5) {
-    const optionsCircle = {
-      index: 1,
-      percent: 70,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 6) {
-    const optionsCircle = {
-      index: 1,
-      percent: 84,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 7) {
-    const optionsCircle = {
-      index: 1,
-      percent: 98,
-    };
-    circle.animationTo(optionsCircle);
-  } else if (swiperGlucosaPreguntas.activeIndex === 8) {
-    const optionsCircle = {
-      index: 1,
-      percent: 92,
-    };
-    circle.animationTo(optionsCircle);
-  }
+  // Actualizar la barra de progreso horizontal
+  const progressBar = document.getElementById('progress-bar');
+  const progressText = document.getElementById('progress-text');
 
+  progressBar.style.width = progressPercentage + '%';
+  progressText.innerHTML = progressPercentage + '% COMPLETADO';
 });
-
-// CALCULAR RESULTADO FINAL
-let valoresRespuestas = [];
 
 // Al finalizar las preguntas, cambia al slide de Resultados
 swiperCalculadora.on('slideChange', function () {
   setTimeout(function() {
     document.querySelector('.loading').classList.add('no-visible');
-}, 2500);
-  // Tomar los valores todos los checkbox  seleccionados de las preguntas
+  }, 2500);
+
+  // Tomar los valores todos los checkbox seleccionados de las preguntas
   const checkboxes = [...document.querySelectorAll('.swiperGlucosaPreguntas [type="radio"]:checked')];
-  for (i in checkboxes) {
+  for (let i in checkboxes) {
     valoresRespuestas.push(checkboxes[i].value);
   }
 
@@ -126,19 +76,19 @@ swiperCalculadora.on('slideChange', function () {
   let resultadoFinal = arrayResultados.reduce((a, b) => a + b, 0), resultadoSlug;
 
   if (resultadoFinal >= 0 && resultadoFinal <= 6) {
-    document.getElementById('su-resultado').innerHTML = "Bajo"
+    document.getElementById('su-resultado').innerHTML = "Bajo";
     document.getElementById("download-results").href = "pdf/glucosa-bajo.pdf";
     document.querySelector('.robot-calcu').src = "images/robot-up.svg";
   } else if (resultadoFinal >= 7 && resultadoFinal <= 11) {
     resultadoSlug = 'ligeramente-elevado';
     document.getElementById('su-resultado').innerHTML = "Ligeramente elevado";
     document.getElementById("download-results").href = "pdf/glucosa-ligeramente-elevado.pdf";
-        document.querySelector('.robot-calcu').src = "images/robot-down.svg";
+    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else if (resultadoFinal >= 12 && resultadoFinal <= 14) {
     resultadoSlug = 'moderado';
     document.getElementById('su-resultado').innerHTML = "Moderado";
     document.getElementById("download-results").href = "pdf/glucosa-moderado.pdf";
-        document.querySelector('.robot-calcu').src = "images/robot-down.svg";
+    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else if (resultadoFinal >= 15 && resultadoFinal <= 19) {
     resultadoSlug = 'alto';
     document.getElementById('su-resultado').innerHTML = "Alto";
