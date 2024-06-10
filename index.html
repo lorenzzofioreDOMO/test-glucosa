@@ -344,7 +344,7 @@
                   </div>
                 </div>
               </div>
-              <div class="container">
+              <div class="container content-resultado">
                 <div class="row">
                   <div class="col-md-9" id="box-resultados">
                     <p class="text-l text-500">SU RESULTADO - RIESGO DE PADECER DIABETES:</p>
@@ -355,8 +355,8 @@
                         <a href="#" id="download-results" class="a-download-result-glucosa">
                           <button class="btn-descarga-resultado">Descargar</button>
                         </a>
-                        <div class="d-flex mb-2 align-items-center justify-content-start">
-                          <p class="text-500 text-">Compartir la calculadora</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <p class="text-500">Compartir la calculadora</p>
                         </div>
                         <div class="redes">
                           <a href="https://www.facebook.com/sharer/sharer.php?u=https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html" id="share-fb" class="a-share-glucosa-fb" target="_blank">
@@ -447,6 +447,9 @@
           --text-xxl: 2.4rem;
           --text-xxxl: 3rem;
           --text-xxxxl: 3.6rem;
+      }
+      a:hover {
+        cursor: pointer;
       }
       .text-white{
           color: var(--white);
@@ -780,8 +783,8 @@
       }
       .loading.no-visible {
           opacity: 0 !important;
-          pointer-events: none !important;
           z-index: -1 !important;
+          display: none!important;
       }
       #resultados-glucosa .descargar {
           display: flex;
@@ -800,6 +803,9 @@
           background-color: #D6F1FA;
           border-radius: 2rem;
           position: relative;
+      }
+      .z-index100{
+        z-index: 1000000000000;
       }
     </style>
   
