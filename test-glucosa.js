@@ -34,10 +34,7 @@ function calcularIMC() {
     }
     else if (imc > 30 ){
       document.getElementById("imc30").checked = true;
-
-
   }
-
 }
 
 // CALCULAR RESULTADO FINAL
@@ -48,7 +45,6 @@ swiperGlucosaPreguntas.on('slideChange', function () {
   const progressPercentages = [0, 14, 28, 42, 56, 70, 84, 98, 100];
   const currentIndex = swiperGlucosaPreguntas.activeIndex;
   const progressPercentage = progressPercentages[currentIndex];
-
   // Actualizar la barra de progreso horizontal
   const progressBar = document.getElementById('progress-bar');
   const progressText = document.getElementById('progress-text');
@@ -79,27 +75,22 @@ swiperCalculadora.on('slideChange', function () {
   if (resultadoFinal >= 0 && resultadoFinal <= 6) {
     document.getElementById('su-resultado').innerHTML = "Bajo";
     document.getElementById("download-results").href = "/pdf/resultado-bajo.pdf";
-    document.querySelector('.robot-calcu').src = "images/robot-up.svg";
   } else if (resultadoFinal >= 7 && resultadoFinal <= 11) {
     resultadoSlug = 'ligeramente-elevado';
     document.getElementById('su-resultado').innerHTML = "Ligeramente elevado";
     document.getElementById("download-results").href = "/pdf/resultado-ligeramente-elevado.pdf";
-    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else if (resultadoFinal >= 12 && resultadoFinal <= 14) {
     resultadoSlug = 'moderado';
     document.getElementById('su-resultado').innerHTML = "Moderado";
     document.getElementById("download-results").href = "/pdf/resultado-elevado.pdf";
-    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else if (resultadoFinal >= 15 && resultadoFinal <= 19) {
     resultadoSlug = 'alto';
     document.getElementById('su-resultado').innerHTML = "Alto";
     document.getElementById("download-results").href = "/pdf/resultado-alto.pdf";
-    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else if (resultadoFinal > 21) {
     resultadoSlug = 'muy-alto';
     document.getElementById('su-resultado').innerHTML = "Muy alto";
     document.getElementById("download-results").href = "/pdf/resultado-muy-alto.pdf";
-    document.querySelector('.robot-calcu').src = "images/robot-down.svg";
   } else {
     resultadoSlug = 'error';
   }

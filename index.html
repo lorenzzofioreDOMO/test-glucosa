@@ -1,112 +1,227 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test Glucosa</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="estilos-nqi.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <meta name="theme-color" content="#FF00FF">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Glucosa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <meta name="theme-color" content="#FF00FF" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-<body id="page-home" class="test-glucosa-landing" style="background-color:#ccc;">
+  <body
+    id="page-home"
+    class="test-glucosa-landing"
+    style="background-color:#3FA3A7;"
+  >
     <!-- TEST CALCULADORA GLUCOSA -->
     <section id="calculadora-glucosa">
       <!-- Swiper -->
       <div class="swiper swiperGlucosa">
         <div class="swiper-wrapper">
-          <div class="swiper-slide  pt-5 pb-5">
+          <div class="swiper-slide pt-5 pb-5">
             <div class="container">
               <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-12" id="calculadora-intro">
-                  <header class="mb-5 d-flex align-items-center justify-content-center">
-                    <h2 class="text-xl text-cyan text-500">Calcule su riesgo de padecer diabetes</h2>
+                  <header
+                    class="mb-5 d-flex align-items-center justify-content-center"
+                  >
+                    <h2 class="text-xl text-cyan text-500">
+                      Calcule su riesgo de padecer diabetes
+                    </h2>
                   </header>
                 </div>
                 <div class="col-md-10">
-                  <div class="swiper swiperGlucosaPreguntas" style="background-color: #fff;border-radius:1rem;">
+                  <div
+                    class="swiper swiperGlucosaPreguntas"
+                    style="background-color: #fff; border-radius: 1rem"
+                  >
                     <div class="swiper-wrapper">
                       <!-- Pregunta 1 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">¿En qué rango de edad se encuentra?</p>
+                        <p class="pregunta">
+                          ¿En qué rango de edad se encuentra?
+                        </p>
                         <div class="row py-4">
                           <div class="col-md-2">
-                            <img src="icono-p-1.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p-1.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad1" value="0">
-                              <label class="form-check-label" for="glucosaEdad1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaEdad"
+                                id="glucosaEdad1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaEdad1"
+                              >
                                 Menos de 45 años
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad2" value="2">
-                              <label class="form-check-label" for="glucosaEdad2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaEdad"
+                                id="glucosaEdad2"
+                                value="2"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaEdad2"
+                              >
                                 45-54 años
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad3" value="3">
-                              <label class="form-check-label" for="glucosaEdad3">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaEdad"
+                                id="glucosaEdad3"
+                                value="3"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaEdad3"
+                              >
                                 55-64 años
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaEdad" id="glucosaEdad4" value="5">
-                              <label class="form-check-label" for="glucosaEdad4">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaEdad"
+                                id="glucosaEdad4"
+                                value="5"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaEdad4"
+                              >
                                 Más de 64 años
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg1-glucosa disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg1-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 2 -->
                       <div class="swiper-slide">
                         <p class="pregunta">Índice de masa corporal</p>
-                        <div class="row py-3 d-flex align-items-start justify-content-center">
+                        <div
+                          class="row py-3 d-flex align-items-start justify-content-center"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p-2.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p-2.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md-5 mb-3 opciones-p-2">
-                            <p class="text-grey text-m mb-3 text-600">Calculadora índice de masa corporal</p>
-                            <label for="imc-cms" class="wrapper"> Mi altura en cm
-                              <input type="number" id="imc-cms" onkeyup="calcularIMC()">
+                            <p class="text-grey text-m mb-3 text-600">
+                              Calculadora índice de masa corporal
+                            </p>
+                            <label for="imc-cms" class="wrapper">
+                              Mi altura en cm
+                              <input
+                                type="number"
+                                id="imc-cms"
+                                onkeyup="calcularIMC()"
+                              />
                             </label>
-                            <label for="imc-kgs" class="wrapper"> Mi peso en kg
-                              <input type="number" id="imc-kgs" onkeyup="calcularIMC()">
+                            <label for="imc-kgs" class="wrapper">
+                              Mi peso en kg
+                              <input
+                                type="number"
+                                id="imc-kgs"
+                                onkeyup="calcularIMC()"
+                              />
                             </label>
                           </div>
                           <div class="col-md-5">
-                            <p class="text-grey mb-3 text-m text-600">Indice de masa corporal</p>
+                            <p class="text-grey mb-3 text-m text-600">
+                              Indice de masa corporal
+                            </p>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="suimc" id="imc25" value="0">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="suimc"
+                                id="imc25"
+                                value="0"
+                              />
                               <label class="form-check-label" for="imc25">
                                 Menos de 25 kg/m2
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="suimc" id="imc2530" value="1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="suimc"
+                                id="imc2530"
+                                value="1"
+                              />
                               <label class="form-check-label" for="imc2530">
                                 Entre 25-30 kg/m2
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="suimc" id="imc30" value="3">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="suimc"
+                                id="imc30"
+                                value="3"
+                              />
                               <label class="form-check-label" for="imc30">
                                 Mayor de 30 kg/m2
                               </label>
                             </div>
                             <div class="opciones">
-                              <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                              <button class="btn preguntas-button-next btn-preg2-glucosa  disabled next-imc"><i class="bi bi-arrow-right-circle"></i></button>
+                              <button class="btn preguntas-button-prev">
+                                <i class="bi bi-arrow-left-circle"></i>
+                              </button>
+                              <button
+                                class="btn preguntas-button-next btn-preg2-glucosa disabled next-imc"
+                              >
+                                <i class="bi bi-arrow-right-circle"></i>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -114,30 +229,67 @@
                       <!-- Pregunta 3 -->
                       <div class="swiper-slide">
                         <p class="pregunta mb-1 text-center">
-                          Perímetro de cintura <br>
-                          <span class="text-grey text-xs mb-3">Medido por debajo de las costillas (normalmente a nivel del ombligo)</span>
+                          Perímetro de cintura <br />
+                          <span class="text-grey text-xs mb-3"
+                            >Medido por debajo de las costillas (normalmente a
+                            nivel del ombligo)</span
+                          >
                         </p>
-                        <div class="row py-3 d-flex align-items-start justify-content-center">
+                        <div
+                          class="row py-3 d-flex align-items-start justify-content-center"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p3.png" alt="icono" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p3.png"
+                              alt="icono"
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md-5">
                             <p class="text-grey mb-3 text-m text-600">Hombre</p>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaHombre1" value="0">
-                              <label class="form-check-label" for="cinturaHombre1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaHombre1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaHombre1"
+                              >
                                 Menos de 94 cm
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaHombre2" value="3">
-                              <label class="form-check-label" for="cinturaHombre2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaHombre2"
+                                value="3"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaHombre2"
+                              >
                                 Entre 94-102 cm
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaHombre3" value="4">
-                              <label class="form-check-label" for="cinturaHombre3">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaHombre3"
+                                value="4"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaHombre3"
+                              >
                                 Más de 102 cm
                               </label>
                             </div>
@@ -145,177 +297,368 @@
                           <div class="col-md-5">
                             <p class="text-grey mb-3 text-m text-600">Mujer</p>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaMujer1" value="0">
-                              <label class="form-check-label" for="cinturaMujer1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaMujer1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaMujer1"
+                              >
                                 Menos de 80 cm
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaMujer2" value="3">
-                              <label class="form-check-label" for="cinturaMujer2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaMujer2"
+                                value="3"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaMujer2"
+                              >
                                 Entre 80-88 cm
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="cintura" id="cinturaMujer3" value="4">
-                              <label class="form-check-label" for="cinturaMujer3">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="cintura"
+                                id="cinturaMujer3"
+                                value="4"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="cinturaMujer3"
+                              >
                                 Más de 88 cm
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg3-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg3-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 4 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">¿Realiza habitualmente al menos 30 minutos de actividad física, en el trabajo y/o en el tiempo libre?</p>
-                        <div class="row py-3 d-flex align-items-center justify-content-center">
+                        <p class="pregunta">
+                          ¿Realiza habitualmente al menos 30 minutos de
+                          actividad física, en el trabajo y/o en el tiempo
+                          libre?
+                        </p>
+                        <div
+                          class="row py-3 d-flex align-items-center justify-content-center"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p4.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p4.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="actFis" id="actFis1" value="0">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="actFis"
+                                id="actFis1"
+                                value="0"
+                              />
                               <label class="form-check-label" for="actFis1">
                                 Sí
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="actFis" id="actFis2" value="2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="actFis"
+                                id="actFis2"
+                                value="2"
+                              />
                               <label class="form-check-label" for="actFis2">
                                 No
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg4-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg4-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 5 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">¿Con qué frecuencia come verduras o frutas?
+                        <p class="pregunta">
+                          ¿Con qué frecuencia come verduras o frutas?
                         </p>
-                        <div class="row d-flex align-items-center justify-content-center py-3">
+                        <div
+                          class="row d-flex align-items-center justify-content-center py-3"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p5.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p5.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas1"
-                                value="0">
-                              <label class="form-check-label" for="verdurasFrutas1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="verdurasFrutas"
+                                id="verdurasFrutas1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="verdurasFrutas1"
+                              >
                                 Todos los días
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="verdurasFrutas" id="verdurasFrutas2"
-                                value="1">
-                              <label class="form-check-label" for="verdurasFrutas2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="verdurasFrutas"
+                                id="verdurasFrutas2"
+                                value="1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="verdurasFrutas2"
+                              >
                                 No todos los días
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg5-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg5-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 6 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">¿Toma medicación para la presión regularmente?
+                        <p class="pregunta">
+                          ¿Toma medicación para la presión regularmente?
                         </p>
-                        <div class="row d-flex align-items-center justify-content-center py-3">
+                        <div
+                          class="row d-flex align-items-center justify-content-center py-3"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p6.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p6.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion1" value="0">
-                              <label class="form-check-label" for="medicPresion1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="medicPresion"
+                                id="medicPresion1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="medicPresion1"
+                              >
                                 Sí
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="medicPresion" id="medicPresion2" value="2">
-                              <label class="form-check-label" for="medicPresion2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="medicPresion"
+                                id="medicPresion2"
+                                value="2"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="medicPresion2"
+                              >
                                 No
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg6-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg6-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 7 -->
                       <div class="swiper-slide">
                         <p class="pregunta mb-2">
-                          ¿Le han encontrado alguna vez valores de glucosa (azúcar)altos? <br>
-                          <span class="text-grey text-xs">(ejemplo: en un control médico, durante una enfermedad, durante el embarazo)</span>
+                          ¿Le han encontrado alguna vez valores de glucosa
+                          (azúcar)altos? <br />
+                          <span class="text-grey text-xs"
+                            >(ejemplo: en un control médico, durante una
+                            enfermedad, durante el embarazo)</span
+                          >
                         </p>
-                        <div class="row d-flex align-items-center justify-content-center py-3">
+                        <div
+                          class="row d-flex align-items-center justify-content-center py-3"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p7.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p7.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta1" value="0">
-                              <label class="form-check-label" for="glucosaAlta1">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaAlta"
+                                id="glucosaAlta1"
+                                value="0"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaAlta1"
+                              >
                                 Sí
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="glucosaAlta" id="glucosaAlta2" value="5">
-                              <label class="form-check-label" for="glucosaAlta2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="glucosaAlta"
+                                id="glucosaAlta2"
+                                value="5"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="glucosaAlta2"
+                              >
                                 No
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn preguntas-button-next btn-preg7-glucosa  disabled"><i class="bi bi-arrow-right-circle"></i></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn preguntas-button-next btn-preg7-glucosa disabled"
+                            >
+                              <i class="bi bi-arrow-right-circle"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                       <!-- Pregunta 8 -->
                       <div class="swiper-slide">
-                        <p class="pregunta">¿Alguno de sus familiares, allegados u otros parientes ha sido
-                          diagnosticado con diabetes?
+                        <p class="pregunta">
+                          ¿Alguno de sus familiares, allegados u otros parientes
+                          ha sido diagnosticado con diabetes?
                         </p>
-                        <div class="row d-flex align-items-center justify-content-center py-3">
+                        <div
+                          class="row d-flex align-items-center justify-content-center py-3"
+                        >
                           <div class="col-md-2">
-                            <img src="icono-p8.png" alt="" width="100" class="icono-pregunta">
+                            <img
+                              src="icono-p8.png"
+                              alt=""
+                              width="100"
+                              class="icono-pregunta"
+                            />
                           </div>
                           <div class="col-md">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab1" value="0">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="fliaDiab"
+                                id="fliaDiab1"
+                                value="0"
+                              />
                               <label class="form-check-label" for="fliaDiab1">
                                 No
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab2" value="3">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="fliaDiab"
+                                id="fliaDiab2"
+                                value="3"
+                              />
                               <label class="form-check-label" for="fliaDiab2">
                                 Sí: abuelos, tía, tío, primos hermanos
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="fliaDiab" id="fliaDiab3" value="4">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="fliaDiab"
+                                id="fliaDiab3"
+                                value="4"
+                              />
                               <label class="form-check-label" for="fliaDiab3">
                                 Sí: padres, hermanos o hijos
                               </label>
                             </div>
                           </div>
                           <div class="opciones">
-                            <button class="btn preguntas-button-prev"><i class="bi bi-arrow-left-circle"></i></button>
-                            <button class="btn glucosa-button-next btn-preg8-glucosa  disabled"><strong>Finalizar</strong></button>
+                            <button class="btn preguntas-button-prev">
+                              <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button
+                              class="btn glucosa-button-next btn-preg8-glucosa disabled"
+                            >
+                              <strong>Finalizar</strong>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -325,8 +668,13 @@
                       <div class="container-bar">
                         <div class="progress-bar" id="progress-bar"></div>
                       </div>
-                      <div class="progress-text" id="progress-text">0% <span class="text-white" style="font-size: 18px;">COMPLETADO</span></div>
-                    </div>                    
+                      <div class="progress-text" id="progress-text">
+                        0%
+                        <span class="text-white" style="font-size: 18px"
+                          >COMPLETADO</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -336,8 +684,14 @@
           <div class="swiper-slide bg-navy">
             <div id="resultados-glucosa">
               <div class="loading">
-                <img src="images/logo_glucosa.png" alt="Logo Mas que Glucosa" class="robot">
-                <p class="text-m text-center text-white">Cargando su resultado...</p>
+                <img
+                  src="images/logo_glucosa.png"
+                  alt="Logo Mas que Glucosa"
+                  class="robot"
+                />
+                <p class="text-m text-center text-white">
+                  Cargando su resultado...
+                </p>
                 <div class="d-flex justify-content-center">
                   <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -347,82 +701,150 @@
               <div class="container content-resultado">
                 <div class="row">
                   <div class="col-md-9" id="box-resultados">
-                    <p class="text-l text-500">SU RESULTADO - RIESGO DE PADECER DIABETES:</p>
-                    <p id="su-resultado" class="text-cyan text-xl mb-3 text-600 text-uppercase"></p>
+                    <p class="text-l text-500">
+                      SU RESULTADO - RIESGO DE PADECER DIABETES:
+                    </p>
+                    <p
+                      id="su-resultado"
+                      class="text-cyan text-xl mb-3 text-600 text-uppercase"
+                    ></p>
                     <div class="revise">
-                      <p class="text-m text-500">Revise este resultado con su médico</p>
-                      <div class="compartir d-flex align-items-center justify-content-start gap-4">
-                        <a href="#" id="download-results" class="a-download-result-glucosa">
-                          <button class="btn-descarga-resultado">Descargar</button>
+                      <p class="text-m text-500">
+                        Revise este resultado con su médico
+                      </p>
+                      <div
+                        class="compartir d-flex align-items-center justify-content-start gap-4"
+                      >
+                        <a
+                          href="#"
+                          id="download-results"
+                          class="a-download-result-glucosa"
+                        >
+                          <button class="btn-descarga-resultado">
+                            Descargar
+                          </button>
                         </a>
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div
+                          class="d-flex align-items-center justify-content-center"
+                        >
                           <p class="text-500">Compartir la calculadora</p>
                         </div>
                         <div class="redes">
-                          <a href="https://www.facebook.com/sharer/sharer.php?u=https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html" id="share-fb" class="a-share-glucosa-fb" target="_blank">
+                          <a
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html"
+                            id="share-fb"
+                            class="a-share-glucosa-fb"
+                            target="_blank"
+                          >
                             <i class="bi bi-facebook text-white"></i>
                           </a>
-                          <a href="https://wa.me/?text=Realicé%20el%20test%20de%20riesgo%20Diabetes%20Tipo2 https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html" id="share-tw" class="a-share-glucosa-tw" target="_blank">
+                          <a
+                            href="https://wa.me/?text=Realicé%20el%20test%20de%20riesgo%20Diabetes%20Tipo2 https://numerosqueimportan.disfrutomisalud.com/calculadora-glucosa.html"
+                            id="share-tw"
+                            class="a-share-glucosa-tw"
+                            target="_blank"
+                          >
                             <i class="bi bi-whatsapp text-white"></i>
                           </a>
-                          <a href="#" id="share-mail" class="a-share-glucosa-mail">
+                          <a
+                            href="#"
+                            id="share-mail"
+                            class="a-share-glucosa-mail"
+                          >
                             <i class="bi bi-instagram text-white"></i>
                           </a>
                         </div>
                       </div>
                     </div>
                     <div class="descargar">
-                      <button class="btn" onclick="location.reload();"><i class="bi bi-arrow-repeat text-white"></i> Comenzar nuevamente</button>
+                      <button class="btn" onclick="location.reload();">
+                        <i class="bi bi-arrow-repeat text-white"></i> Comenzar
+                        nuevamente
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <img src="images/img-resultado-bajo.png" alt="" class="img-resultado">
+                    <img
+                      src="images/img-resultado-bajo.png"
+                      alt=""
+                      class="img-resultado"
+                    />
                   </div>
                   <!--Info Resultado-->
                   <div class="col-12 mt-5 px-4">
-                    <p class="text-ml text-blue text-600 mb-3">Se estima que 1 de cada 25 personas desarrollará diabetes.</p>
+                    <p class="text-ml text-blue text-600 mb-3">
+                      Se estima que 1 de cada 25 personas desarrollará diabetes.
+                    </p>
                     <p>
-                      Usted no puede hacer nada respecto a su edad y su predisposición genética.<br>
-                      Pero sí, respecto al resto de factores que influyen en la diabetes Tipo 2 como el sobrepeso, la
-                      obesidad abdominal, el estilo de vida sedentario, los hábitos alimenticios y el fumar.<br>
-                      <strong>Sí está en sus manos hacer algo:</strong> Los cambios en su estilo de vida pueden prevenir
-                      la diabetes o al menos retrasar su inicio hasta edades ya muy avanzadas.
+                      Usted no puede hacer nada respecto a su edad y su
+                      predisposición genética.<br />
+                      Pero sí, respecto al resto de factores que influyen en la
+                      diabetes Tipo 2 como el sobrepeso, la obesidad abdominal,
+                      el estilo de vida sedentario, los hábitos alimenticios y
+                      el fumar.<br />
+                      <strong>Sí está en sus manos hacer algo:</strong> Los
+                      cambios en su estilo de vida pueden prevenir la diabetes o
+                      al menos retrasar su inicio hasta edades ya muy avanzadas.
                     </p>
                   </div>
                   <div class="col-md-9 px-4">
                     <div class="tips">
                       <div class="tip">
-                        <img src="icono-dieta.png" alt="icono" class="tip-1">
+                        <img src="icono-dieta.png" alt="icono" class="tip-1" />
                         <p>
-                          <span class="text-blue"><b>Cuidar su dieta</b></span><br>
-                          Tomando más cereales y fibras y reemplazando grasas animales por grasas vegetales.
+                          <span class="text-blue"><b>Cuidar su dieta</b></span
+                          ><br />
+                          Tomando más cereales y fibras y reemplazando grasas
+                          animales por grasas vegetales.
                         </p>
                       </div>
                       <div class="tip">
-                        <img src="icono-vigilar.png" alt="icono" class="tip-2">
+                        <img
+                          src="icono-vigilar.png"
+                          alt="icono"
+                          class="tip-2"
+                        />
                         <p>
-                          <span class="text-blue bold"><b>Vigilar el aumento de peso</b></span><br>
+                          <span class="text-blue bold"
+                            ><b>Vigilar el aumento de peso</b></span
+                          ><br />
                           sobre todo en la zona de la cintura.
                         </p>
                       </div>
                       <div class="tip">
-                        <img src="icono-practicar.png" alt="icono" class="tip-3">
+                        <img
+                          src="icono-practicar.png"
+                          alt="icono"
+                          class="tip-3"
+                        />
                         <p>
-                          <span class="text-blue"><b>Practicar actividad física</b></span>
+                          <span class="text-blue"
+                            ><b>Practicar actividad física</b></span
+                          >
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-9 pb-5 px-4">
-                    <p class="text-left text-m text-600 mb-2 text-blue"><strong>La prevención salva vidas. Consulte con su médico.</strong></p>
-                    <p class="text-s">Este contenido no hace parte de un consejo médico ni un diagnóstico clínico. Esta
-                      es información preventiva diseñada para que la comparta con su médico y para que él sepa más sobre su riesgo. 
-                      NO DEJE O CAMBIE su medicación para las enfermedades cardio metabólicas sin consultar con un
-                      profesional de la salud. Consulte siempre a su médico antes de tomar cualquier decisión
-                      relacionada con su enfermedad.</p>
+                    <p class="text-left text-m text-600 mb-2 text-blue">
+                      <strong
+                        >La prevención salva vidas. Consulte con su
+                        médico.</strong
+                      >
+                    </p>
+                    <p class="text-s">
+                      Este contenido no hace parte de un consejo médico ni un
+                      diagnóstico clínico. Esta es información preventiva
+                      diseñada para que la comparta con su médico y para que él
+                      sepa más sobre su riesgo. NO DEJE O CAMBIE su medicación
+                      para las enfermedades cardio metabólicas sin consultar con
+                      un profesional de la salud. Consulte siempre a su médico
+                      antes de tomar cualquier decisión relacionada con su
+                      enfermedad.
+                    </p>
                   </div>
                 </div>
-                <img src="img-mujer-derecha.png" alt="" class="persona">
+                <img src="img-mujer-derecha.png" alt="" class="persona" />
               </div>
             </div>
           </div>
@@ -430,464 +852,55 @@
       </div>
     </section>
 
-    <style>
-      :root {
-          --navy: #002E66;
-          --cyan: #12C6C1;
-          --cyanDark: #3FA3A7;
-          --white:#fff;
-          --text-xxs: 0.6rem;
-          --text-xs: 0.8rem;
-          --text-s: 0.9rem;
-          --text-r: 1.1rem;
-          --text-m: 1.2rem;
-          --text-ml: 1.4rem;
-          --text-l: 1.6rem;
-          --text-xl: 2rem;
-          --text-xxl: 2.4rem;
-          --text-xxxl: 3rem;
-          --text-xxxxl: 3.6rem;
-      }
-      a:hover {
-        cursor: pointer;
-      }
-      .text-white{
-          color: var(--white);
-      }
-      .text-navy {
-          color: var(--navy);
-      }
-      .text-cyan {
-          color: var(--cyan);
-      }
-      .text-cyanDark {
-          color: var(--cyanDark);
-      }
-      .text-gray {
-          color: var(--gray)!important;
-      }
-      .text-s {
-          font-size: var(--text-s);
-      }
-      .text-m {
-          font-size: var(--text-m);
-      }
-      .text-ml {
-          font-size: var(--text-ml);
-      }
-      .text-l {
-          font-size: var(--text-l);
-      }
-      .text-xl {
-          font-size: var(--text-xl);
-      }
-      .text-xxl {
-          font-size: var(--text-xxl) !important;
-          line-height: 1.3;
-      }
-      .text-xxxl {
-          font-size: var(--text-xxxl) !important;
-          line-height: 1.3;
-      }
-      .text-xxxxl {
-          font-size: var(--text-xxxxl) !important;
-          line-height: 1.3;
-      }
-      .text-center {
-        text-align: center!important;
-      }
-      .text-300 {
-          font-weight: 300;
-      }
-      .text-400 {
-          font-weight: 400;
-      }
-      .text-500 {
-          font-weight: 500;
-      }
-      .text-600 {
-          font-weight: 600;
-      }
-      .text-800 {
-          font-weight: 800;
-      }
-      .bold {
-        font-weight: 600;
-      }
-      .swiper{
-          height: 100%!important;
-          overflow:visible!important;
-      }
-      .btn {
-          border-radius: 3rem;
-          background-color: #fff;
-          color:#fff;
-          border: none;
-          padding: .5rem 3rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: .75rem;
-          box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-      }
-      .swiper-wrapper {
-        height: 370px!important;
-      }
-      .swiper-slide {
-        padding-left: 0rem!important;
-      }
-      .icono-pregunta {
-        margin-left: -3rem;
-      }
-      .form-check-input {
-        border: 1px solid #00BCFF!important;
-      }
-      .opciones-p-2 input {
-        border: 1px solid #00BCFF!important;
-      }
-      .text-grey {
-        color: #505050;
-      }
-      .text-blue {
-        color:#005877;
-      }
-      .text-xs {
-        font-size: .9rem;
-      }
-      .progress-container {
-        width: 100%;
-        background-color: #005877;
-        border-radius: 1rem;
-        overflow: hidden;
-        margin-bottom: 20px;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-      .container-bar {
-        width: 100%;
-        height: 20px;
-        background-color: #f6f6f6;
-        text-align: center;
-        line-height: 20px;
-        color: white;
-        border-radius: 25px;
-        transition: width 0.5s ease;
-      }
-      .progress-bar {
-        width: 0%;
-        height: 20px;
-        background-color: #f39c12;
-        text-align: center;
-        line-height: 20px;
-        color: white;
-        border-radius: 25px 0 0 25px;
-        transition: width 0.5s ease;
-      }
-      .progress-text {
-        text-align: center;
-        margin-top: 10px;
-        font-size: 24px;
-        font-weight: 600;
-        color: #f39c12;
-      }
-      #box-resultados {
-        background-color: #005877;
-        border-radius: 16px;
-        padding: 2rem;
-        color: #fafafa;
-      }
-      #su-resultado {
-        color: #F9B247;
-        border: 1px solid #fafafa;
-        border-radius: 12px;
-        margin-top: 1rem;
-        padding: .6rem;
-        width: 80%;
-      }
-      .img-resultado {
-        margin-left: -70px;
-        max-width: 370px;
-      }
-      .btn-descarga-resultado {
-        background-color: #fff;
-        border: none;
-        color: #005877;
-        padding: .5rem 2rem;
-        border-radius: 50rem;
-      }
-      .revise {
-        display: flex;
-        align-items: flex-start;
-        gap: 2rem;
-        flex-direction: column;
-        margin-bottom: 30px;
-      }
-      .compartir .redes {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
-      .compartir .redes a {
-        font-size: 1.4rem;
-      }
-      #resultados-glucosa .descargar button.btn {
-        border: solid 2px #fafafa;
-        background-color: transparent;
-        color: #fff;
-      }
-      #resultados-glucosa .container {
-        background-color: #BBE1EE;
-      }
-      #resultados-glucosa .loading {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #005877;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 7rem;
-        gap: 2rem;
-        z-index: 100;
-        transition: all .2s ease-in;
-      }
-      #resultados-glucosa {
-        background-color: #EAEAEA;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        position: relative;
-      }
-      #resultados-glucosa .tips {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        position: relative;
-        min-height: 160px;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
-        gap: 1rem;
-      }
-      .tips .tip {
-        display: flex;
-        align-items: flex-start;
-        gap: .5rem;
-        width: 300px;
-      }
-      .tips .tip .tip-1,
-      .tips .tip .tip-2,
-      .tips .tip .tip-3 {
-        width: 60px;
-        object-fit: cover;
-      }
-      #resultados-glucosa .persona {
-        position: absolute;
-        bottom: -50px;
-        right: -50px;
-        max-height: 450px;
-      }
-      .swiperGlucosa .pregunta {
-          width: 100%;
-          font-size: var(--text-l);
-          text-transform: uppercase;
-          font-weight: 700;
-          margin-bottom: 0;
-          text-align: center;
-          color: #00BCFF;
-          padding: 2rem;
-          background: #D6F1FA;
-          border-radius: 1rem;
-      }
-      .swiperGlucosa .form-check {
-          font-size: var(--text-m);
-          margin-bottom: .5rem;
-      }
-      .swiperGlucosa .opciones {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          gap: 1rem;
-          padding-right: 2rem;
-          margin-top: -1rem;
-      }
-      label.wrapper {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          width: 100%;
-          margin-bottom: .6rem;
-      }
-      .swiperGlucosa button.btn:hover {
-          color: var(--navy);
-      }
-      .swiperGlucosa #quiz {
-          min-height: 400px;
-      }
-      .swiperGlucosa #quiz #question {
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .swiperGlucosa #quiz h2 {
-          text-transform: lowercase;
-      }
-      .swiperGlucosa #question ul {
-          list-style: none;
-      }
-      .swiperGlucosa #question ul li {
-          margin-bottom: .5rem;
-          font-size: var(--text-m);
-          display: flex;
-          align-items: center;
-          gap: .5rem;
-      }
-      .swiperGlucosa #question input[type="radio"] {
-          width: 18px;
-          height: 18px;
-      }
-      .swiperGlucosaPreguntas button.btn {
-          padding: .5rem;
-          color: var(--cyanDark);
-      }
-      .swiperGlucosaPreguntas button.btn:hover {
-          color: #002E66;
-      }
-      .swiperGlucosaPreguntas button.btn:hover svg path {
-          fill: var(--cyan);
-      }
-      .swiperGlucosaPreguntas button.btn img {
-          width: 45px;
-          height: 45px;
-      }
-      .swiperGlucosaPreguntas .swiper-slide {
-          padding-left: 10px;
-      }
-      .swiperGlucosa tspan {
-          fill: #F9B247;
-          font-weight: 600;
-      }
-      .swiperGlucosaPreguntas label.wrapper input,
-      .swiperGlucosaPreguntas label.wrapper textarea {
-          border: solid 1px #002E66;
-          border-radius: 1rem;
-          color: var(--cyanDark);
-          font-weight: 500;
-          width: 100%;
-          height: 40px;
-          padding-left: .6rem;
-      }
-      .loading.no-visible {
-          opacity: 0 !important;
-          z-index: -1 !important;
-          display: none!important;
-      }
-      #resultados-glucosa .descargar {
-          display: flex;
-          align-items: flex-start;
-          gap: 2rem;
-          margin-bottom: 30px;
-      }
-      .swiperGlucosa button.btn {
-          box-shadow: none;
-          background-color: transparent;
-      }
-      .swiperGlucosa button i {
-          font-size: 2rem;
-      }
-      #resultados-glucosa .container {
-          background-color: #D6F1FA;
-          border-radius: 2rem;
-          position: relative;
-      }
-      .z-index100{
-        z-index: 1000000000000;
-      }
-    </style>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    window.addEventListener('load', function () {
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {});
+      var details = document.querySelector("details");
 
-    })
-    var details = document.querySelector("details")
-
-    details.addEventListener("toggle", function () {
-      luge.emitter.emit("resize");
-    })
-
-
-  </script>
-
-  <script>
-    var swiper = new Swiper(".swiperBoxes", {
-      slidesPerView: 1,
-      spaceBetween: 15,
-      pagination: {
-        el: ".boxes-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      },
-    });
-  </script>
-
+      details.addEventListener("toggle", function () {
+        luge.emitter.emit("resize");
+      });
+    </script>
     <!--SCRIPT CALCULADORA-->
     <script>
       var swiperCalculadora = new Swiper(".swiperGlucosa", {
         allowTouchMove: false,
-        effect: 'fade',
+        effect: "fade",
         fadeEffect: {
-          crossFade: true
+          crossFade: true,
         },
         autoHeight: true, //enable auto height
         navigation: {
           nextEl: ".glucosa-button-next",
           prevEl: ".glucosa-button-prev",
         },
-  
       });
     </script>
-     <script>
+    <script>
       var swiperGlucosaPreguntas = new Swiper(".swiperGlucosaPreguntas", {
-        /*   pagination: {
-             el: ".preguntas-pagination",
-             type: "progressbar",
-             dynamicBullets: true,
-           }, */
-        effect: 'fade',
+        effect: "fade",
         fadeEffect: {
-          crossFade: true
+          crossFade: true,
         },
         allowTouchMove: false,
         navigation: {
           nextEl: ".preguntas-button-next",
           prevEl: ".preguntas-button-prev",
         },
-  
       });
     </script>
     <script src="test-glucosa.js"></script>
-
-</body>
-
+  </body>
 </html>
