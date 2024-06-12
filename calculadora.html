@@ -20,7 +20,388 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-
+<style>
+    :root {
+    --navy: #002E66;
+    --cyan: #12C6C1;
+    --cyanDark: #3FA3A7;
+    --white:#fff;
+    --text-xxs: 0.6rem;
+    --text-xs: 0.8rem;
+    --text-s: 0.9rem;
+    --text-r: 1.1rem;
+    --text-m: 1.2rem;
+    --text-ml: 1.4rem;
+    --text-l: 1.6rem;
+    --text-xl: 2rem;
+    --text-xxl: 2.4rem;
+    --text-xxxl: 3rem;
+    --text-xxxxl: 3.6rem;
+}
+a:hover {
+  cursor: pointer;
+}
+.text-white{
+    color: var(--white);
+}
+.text-navy {
+    color: var(--navy);
+}
+.text-cyan {
+    color: var(--cyan);
+}
+.text-cyanDark {
+    color: var(--cyanDark);
+}
+.text-gray {
+    color: var(--gray)!important;
+}
+.text-s {
+    font-size: var(--text-s);
+}
+.text-m {
+    font-size: var(--text-m);
+}
+.text-ml {
+    font-size: var(--text-ml);
+}
+.text-l {
+    font-size: var(--text-l);
+}
+.text-xl {
+    font-size: var(--text-xl);
+}
+.text-xxl {
+    font-size: var(--text-xxl) !important;
+    line-height: 1.3;
+}
+.text-xxxl {
+    font-size: var(--text-xxxl) !important;
+    line-height: 1.3;
+}
+.text-xxxxl {
+    font-size: var(--text-xxxxl) !important;
+    line-height: 1.3;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-300 {
+    font-weight: 300;
+}
+.text-400 {
+    font-weight: 400;
+}
+.text-500 {
+    font-weight: 500;
+}
+.text-600 {
+    font-weight: 600;
+}
+.text-800 {
+    font-weight: 800;
+}
+.bold {
+  font-weight: 600;
+}
+.swiper{
+    height: 100%!important;
+    overflow:visible!important;
+}
+.btn {
+    border-radius: 3rem;
+    background-color: #fff;
+    color:#fff;
+    border: none;
+    padding: .5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+.swiper-wrapper {
+  height: 370px!important;
+}
+.swiper-slide {
+  padding-left: 0rem!important;
+}
+.icono-pregunta {
+  margin-left: -3rem;
+}
+.form-check-input {
+  border: 1px solid #00BCFF!important;
+}
+.opciones-p-2 input {
+  border: 1px solid #00BCFF!important;
+}
+.text-grey {
+  color: #505050;
+}
+.text-blue {
+  color:#005877;
+}
+.text-xs {
+  font-size: .9rem;
+}
+.progress-container {
+  width: 100%;
+  background-color: #005877;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.container-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f6f6f6;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  border-radius: 25px;
+  transition: width 0.5s ease;
+}
+.progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #f39c12;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  border-radius: 25px 0 0 25px;
+  transition: width 0.5s ease;
+}
+.progress-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f39c12;
+}
+#box-resultados {
+  background-color: #005877;
+  border-radius: 16px;
+  padding: 2rem;
+  color: #fafafa;
+}
+#su-resultado {
+  color: #F9B247;
+  border: 1px solid #fafafa;
+  border-radius: 12px;
+  margin-top: 1rem;
+  padding: .6rem;
+  width: 80%;
+}
+.img-resultado {
+  margin-left: -70px;
+  max-width: 370px;
+}
+.btn-descarga-resultado {
+  background-color: #fff;
+  border: none;
+  color: #005877;
+  padding: .5rem 2rem;
+  border-radius: 50rem;
+}
+.revise {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.compartir .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.compartir .redes a {
+  font-size: 1.4rem;
+}
+#resultados-glucosa .descargar button.btn {
+  border: solid 2px #fafafa;
+  background-color: transparent;
+  color: #fff;
+}
+#resultados-glucosa .container {
+  background-color: #BBE1EE;
+}
+#resultados-glucosa .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #005877;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 7rem;
+  gap: 2rem;
+  z-index: 100;
+  transition: all .2s ease-in;
+}
+#resultados-glucosa {
+  background-color: #EAEAEA;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+#resultados-glucosa .tips {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  min-height: 160px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.tips .tip {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  width: 300px;
+}
+.tips .tip .tip-1,
+.tips .tip .tip-2,
+.tips .tip .tip-3 {
+  width: 60px;
+  object-fit: cover;
+}
+#resultados-glucosa .persona {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  max-height: 450px;
+}
+.swiperGlucosa .pregunta {
+    width: 100%;
+    font-size: var(--text-l);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    color: #00BCFF;
+    padding: 2rem;
+    background: #D6F1FA;
+    border-radius: 1rem;
+}
+.swiperGlucosa .form-check {
+    font-size: var(--text-m);
+    margin-bottom: .5rem;
+}
+.swiperGlucosa .opciones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 2rem;
+    margin-top: -1rem;
+}
+label.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .6rem;
+}
+.swiperGlucosa button.btn:hover {
+    color: var(--navy);
+}
+.swiperGlucosa #quiz {
+    min-height: 400px;
+}
+.swiperGlucosa #quiz #question {
+    display: flex;
+    flex-wrap: wrap;
+}
+.swiperGlucosa #quiz h2 {
+    text-transform: lowercase;
+}
+.swiperGlucosa #question ul {
+    list-style: none;
+}
+.swiperGlucosa #question ul li {
+    margin-bottom: .5rem;
+    font-size: var(--text-m);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.swiperGlucosa #question input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+.swiperGlucosaPreguntas button.btn {
+    padding: .5rem;
+    color: var(--cyanDark);
+}
+.swiperGlucosaPreguntas button.btn:hover {
+    color: #002E66;
+}
+.swiperGlucosaPreguntas button.btn:hover svg path {
+    fill: var(--cyan);
+}
+.swiperGlucosaPreguntas button.btn img {
+    width: 45px;
+    height: 45px;
+}
+.swiperGlucosaPreguntas .swiper-slide {
+    padding-left: 10px;
+}
+.swiperGlucosa tspan {
+    fill: #F9B247;
+    font-weight: 600;
+}
+.swiperGlucosaPreguntas label.wrapper input,
+.swiperGlucosaPreguntas label.wrapper textarea {
+    border: solid 1px #002E66;
+    border-radius: 1rem;
+    color: var(--cyanDark);
+    font-weight: 500;
+    width: 100%;
+    height: 40px;
+    padding-left: .6rem;
+}
+.loading.no-visible {
+    opacity: 0 !important;
+    height: 0!important;
+    z-index: 1 !important;
+    display: none!important;
+}
+#resultados-glucosa {
+  z-index: 1000;
+}
+#resultados-glucosa .descargar {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+.swiperGlucosa button.btn {
+    box-shadow: none;
+    background-color: transparent;
+}
+.swiperGlucosa button i {
+    font-size: 2rem;
+}
+#resultados-glucosa .container {
+    background-color: #D6F1FA;
+    border-radius: 2rem;
+    position: relative;
+}
+.z-index100{
+  z-index: 1000000000000;
+}
+</style>
   <body
     id="page-home"
     class="test-glucosa-landing"
@@ -895,6 +1276,104 @@
         },
       });
     </script>
-    <script src="test-glucosa.js"></script>
-  </body>
+    <script>
+        // Los botones estan disabled por defecto para que no se pueda avanzar hasta no haber seleccionado una respuesta.
+const radioBtn = document.querySelectorAll('input[type="radio"]');
+
+// Al seleccionar un check, busca el boton de next que esta dentro del mismo contenedor y le saca la clase disabled.
+radioBtn.forEach(el => el.addEventListener('click', event => {
+  const clicked = event.target;
+  const clickedParent = clicked.closest(".swiper-slide");
+  const parentNext = clickedParent.querySelectorAll('button.btn');
+  parentNext.forEach(function (element) {
+    element.classList.remove("disabled");
+  });
+}));
+
+function calcularIMC() {
+//get value for height - metros	
+  const centimetros = $("#imc-cms").val();
+  $('.next-imc').removeClass('disabled');
+//get value for weight - kilos
+  const kilos = $("#imc-kgs").val();
+  const alturaEnMetros = centimetros / 100;
+  console.log('kilos' + kilos);
+  console.log('metros' + centimetros);
+
+  const imc = Math.round(kilos / (alturaEnMetros * alturaEnMetros));
+
+  console.log('imc: ' + imc);
+
+
+  if (imc < 25) {
+    document.getElementById("imc25").checked = true;
+    }
+    else if (imc => 25 && bmi <= 30) {
+    document.getElementById("imc2530").checked = true;
+    }
+    else if (imc > 30 ){
+      document.getElementById("imc30").checked = true;
+  }
+}
+
+// CALCULAR RESULTADO FINAL
+let valoresRespuestas = [];
+
+// Al avanzar de pregunta cambiar los valores del circulo de porcentaje
+swiperGlucosaPreguntas.on('slideChange', function () {
+  const progressPercentages = [0, 14, 28, 42, 56, 70, 84, 98, 100];
+  const currentIndex = swiperGlucosaPreguntas.activeIndex;
+  const progressPercentage = progressPercentages[currentIndex];
+  // Actualizar la barra de progreso horizontal
+  const progressBar = document.getElementById('progress-bar');
+  const progressText = document.getElementById('progress-text');
+
+  progressBar.style.width = progressPercentage + '%';
+  progressText.innerHTML = progressPercentage + '% COMPLETADO';
+});
+
+// Al finalizar las preguntas, cambia al slide de Resultados
+swiperCalculadora.on('slideChange', function () {
+  setTimeout(function() {
+    document.querySelector('.loading').classList.add('no-visible');
+    document.querySelector('.content-resultado').classList.add('z-index100');
+  }, 2500);
+
+  // Tomar los valores todos los checkbox seleccionados de las preguntas
+  const checkboxes = [...document.querySelectorAll('.swiperGlucosaPreguntas [type="radio"]:checked')];
+  for (let i in checkboxes) {
+    valoresRespuestas.push(checkboxes[i].value);
+  }
+
+  // Convertir el array de strings a array de numeros
+  let arrayResultados = valoresRespuestas.map(Number);
+
+  // Sumar todos los numeros del array
+  let resultadoFinal = arrayResultados.reduce((a, b) => a + b, 0), resultadoSlug;
+
+  if (resultadoFinal >= 0 && resultadoFinal <= 6) {
+    document.getElementById('su-resultado').innerHTML = "Bajo";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-bajo.pdf";
+  } else if (resultadoFinal >= 7 && resultadoFinal <= 11) {
+    resultadoSlug = 'ligeramente-elevado';
+    document.getElementById('su-resultado').innerHTML = "Ligeramente elevado";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-ligeramente-elevado.pdf";
+  } else if (resultadoFinal >= 12 && resultadoFinal <= 14) {
+    resultadoSlug = 'moderado';
+    document.getElementById('su-resultado').innerHTML = "Moderado";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-elevado.pdf";
+  } else if (resultadoFinal >= 15 && resultadoFinal <= 19) {
+    resultadoSlug = 'alto';
+    document.getElementById('su-resultado').innerHTML = "Alto";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-alto.pdf";
+  } else if (resultadoFinal > 21) {
+    resultadoSlug = 'muy-alto';
+    document.getElementById('su-resultado').innerHTML = "Muy alto";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-muy-alto.pdf";
+  } else {
+    resultadoSlug = 'error';
+  }
+});
+</script>
+</body>
 </html>

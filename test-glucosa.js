@@ -58,6 +58,7 @@ swiperCalculadora.on('slideChange', function () {
   setTimeout(function() {
     document.querySelector('.loading').classList.add('no-visible');
     document.querySelector('.content-resultado').classList.add('z-index100');
+    document.querySelector('.calculadora-test').classList.add('result-height');
   }, 2500);
 
   // Tomar los valores todos los checkbox seleccionados de las preguntas
@@ -74,23 +75,23 @@ swiperCalculadora.on('slideChange', function () {
 
   if (resultadoFinal >= 0 && resultadoFinal <= 6) {
     document.getElementById('su-resultado').innerHTML = "Bajo";
-    document.getElementById("download-results").href = "/pdf/resultado-bajo.pdf";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-bajo.pdf";
   } else if (resultadoFinal >= 7 && resultadoFinal <= 11) {
     resultadoSlug = 'ligeramente-elevado';
     document.getElementById('su-resultado').innerHTML = "Ligeramente elevado";
-    document.getElementById("download-results").href = "/pdf/resultado-ligeramente-elevado.pdf";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-ligeramente-elevado.pdf";
   } else if (resultadoFinal >= 12 && resultadoFinal <= 14) {
     resultadoSlug = 'moderado';
     document.getElementById('su-resultado').innerHTML = "Moderado";
-    document.getElementById("download-results").href = "/pdf/resultado-elevado.pdf";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-elevado.pdf";
   } else if (resultadoFinal >= 15 && resultadoFinal <= 19) {
     resultadoSlug = 'alto';
     document.getElementById('su-resultado').innerHTML = "Alto";
-    document.getElementById("download-results").href = "/pdf/resultado-alto.pdf";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-alto.pdf";
   } else if (resultadoFinal > 21) {
     resultadoSlug = 'muy-alto';
     document.getElementById('su-resultado').innerHTML = "Muy alto";
-    document.getElementById("download-results").href = "/pdf/resultado-muy-alto.pdf";
+    document.getElementById("download-results").href = "https://masqueglucosa.com/wp-content/uploads/2024/06/resultado-muy-alto.pdf";
   } else {
     resultadoSlug = 'error';
   }
